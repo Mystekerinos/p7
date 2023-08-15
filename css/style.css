@@ -57,19 +57,34 @@ input {
 .searchButton{
     display:flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-button{
+
+.Sbutton{
+    border-radius: 30%;
+    border:solid;
     top:550px;
+    width:170px;
+    padding:12px;
     left:23px;
     display:flex;
+    margin-left:10px;
     position:relative;
+    align-items: center;
+}
+
+img{
+    margin-left:56px;
+    rotate:90deg;
 }
 
 .searchButon{
     background: url(/assets/Images/headeBackground.svg) center center/ 78px 78px no-repeat;
     height:61px;
     width:71px;
+    top:0px;
+    left:-1px;
 }
 /*** tags section ***/
 
