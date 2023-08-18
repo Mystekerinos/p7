@@ -1,17 +1,20 @@
+import { getMeals } from "../utils/fetchJsonData.js";
 import { mealFactory } from "../factories/meal.js";
-// display photographers
-async function displayData() {
-  const mealSection = document.querySelector(".meal_section");
+// display meals
+async function displayData(recipes) {
+  const mealsSection = document.querySelector(".meal_section");
 
-  const mealMenu = mealFactory();
-  const mealCardDom = mealMenu.getMealCardDom();
-  mealSection.appendChild(mealCardDom);
-
-  // collects data from photographers
-  async function init() {
-    const { photographers } = await getPhotographers();
-
-    displayData(photographers);
-  }
+  recipes.forEach((meal) => {
+    const mealModel = mealFactory(meal);
+    const mealCardDOM = mealModel.getMealCardDom();
+    mealsSection.appendChild(mealCardDOM);
+  });
 }
+// collects data from meals
+async function init() {
+  const { recipes } = await getMeals();
+  console.log("getMeals", recipes);
+  displayData(recipes);
+}
+
 init();
