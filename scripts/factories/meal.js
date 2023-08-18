@@ -1,8 +1,9 @@
-export function photographerFactory(data, tabindex) {
+export function mealFactory(data) {
   const {
     id,
     image,
     name,
+    title,
     servings,
     ingredient,
     quantity,
@@ -24,11 +25,11 @@ export function photographerFactory(data, tabindex) {
 
     isTitle.textContent = title;
 
-    const isRecette = document.createElement("div");
-    isRecette.classList.add("card_description_Recette");
-    isRecette.textContent = recette;
+    const isImage = document.createElement("div");
+    isImage.classList.add("card_description_title");
 
-    // Create a ingredient element for the artist ingredient
+    isImage.textContent = Image;
+
     const isIngredient = document.createElement("div");
     isIngredient.classList.add("card_description_ingredient");
     isIngredient.textContent = ingredient;
