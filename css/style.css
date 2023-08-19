@@ -733,5 +733,18 @@ img{
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
+    gap:45px;
     margin-top:656px;
+}
+
+.card_description_img{
+    margin-left:0px;
+    rotate:0deg;
+    width:100%;
+    height:253px;
+    object-fit: cover;
+}
+.card_name{
+    font-size:18px;
+    font-weight:bold ;
 }

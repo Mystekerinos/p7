@@ -1,7 +1,6 @@
 export function mealFactory(data) {
   const {
     id,
-    image,
     name,
     time,
     servings,
@@ -11,7 +10,7 @@ export function mealFactory(data) {
     ustensils,
   } = data;
   console.log("data", data);
-  const Image = `assets/Recettes/${image}`;
+  const Image = `assets/Recettes/${id}.jpg`;
   console.log("Image", Image);
   function getMealCardDom() {
     const card = document.createElement("card");
@@ -22,10 +21,9 @@ export function mealFactory(data) {
     isName.classList.add("card_name");
     isName.textContent = name;
 
-    const isImage = document.createElement("div");
-    isImage.classList.add("card_description_title");
-
-    isImage.textContent = Image;
+    const isImage = document.createElement("img");
+    isImage.classList.add("card_description_img");
+    isImage.setAttribute("src", Image);
 
     const isIngredient = document.createElement("div");
     isIngredient.classList.add("card_description_ingredient");
@@ -51,6 +49,7 @@ export function mealFactory(data) {
     isappliance.classList.add("card_description_appliance");
     isappliance.textContent = appliance;
 
+    card.appendChild(isImage);
     card.appendChild(isName);
     card.appendChild(isDescription);
     card.appendChild(isIngredient);
