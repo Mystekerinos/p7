@@ -724,6 +724,14 @@ img{
 
 
 .card{
+    border:solid black;
     width:380px;
     height:731px;
+}
+
+.meal_section{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top:656px;
 }
