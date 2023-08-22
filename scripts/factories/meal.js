@@ -10,7 +10,7 @@ export function mealFactory(data) {
     ustensils,
   } = data;
 
-  const [ingredientOne, ingredientTwo, ingredientThree] = ingredients;
+  const [ingredientOne] = ingredients;
 
   console.log("ingredientOne", ingredientOne);
   console.log("data", data);
@@ -30,91 +30,34 @@ export function mealFactory(data) {
     isImage.classList.add("card_description_img");
     isImage.setAttribute("src", Image);
 
-    let { ingredient, quantity, unit } = ingredientOne;
-
-    // const isIngredient2 = document.createElement("div");
-    // isIngredient2.classList.add("card_description_ingredient");
-    // isIngredient2.textContent = ingredient2;
-
-    // const isQuantity2 = document.createElement("div");
-    // isQuantity2.classList.add("card_description_ingredient");
-    // isQuantity2.textContent = quantity2;
-
-    // const isUnit2 = document.createElement("div");
-    // isUnit2.classList.add("card_description_ingredient");
-    // isUnit2.textContent = unit2;
-
-    // console.log("isUnit2", isUnit2);
-
-    // const allIngredient2 = document.createElement("div");
-    // allIngredient2.classList.add("card_description_ingredient");
-
-    // allIngredient2.appendChild(isIngredient2);
-    // allIngredient2.appendChild(isQuantity2);
-    // allIngredient2.appendChild(isUnit2);
-
-    // const isIngredient3 = document.createElement("div");
-    // isIngredient3.classList.add("card_description_ingredient");
-    // isIngredient3.textContent = ingredient3;
-
-    // const isQuantity3 = document.createElement("div");
-    // isQuantity3.classList.add("card_description_ingredient");
-    // isQuantity3.textContent = quantity3;
-
-    // const isUnit3 = document.createElement("div");
-    // isUnit3.classList.add("card_description_ingredient");
-    // isUnit3.textContent = unit3;
-
-    // const allIngredient3 = document.createElement("div");
-    // allIngredient3.classList.add("card_description_ingredient");
-
-    // allIngredient3.appendChild(isIngredient3);
-    // allIngredient3.appendChild(isQuantity3);
-    // allIngredient3.appendChild(isUnit3);
-
     const isIngredient = document.createElement("div");
     isIngredient.classList.add("card_description_ingredient");
-    isIngredient.textContent = ingredient;
-
     const isQuantity = document.createElement("div");
-    isQuantity.classList.add("card_description_ingredient");
-    isQuantity.textContent = quantity;
-
+    isQuantity.classList.add("card_description_quantity");
     const isUnit = document.createElement("div");
-    isUnit.classList.add("card_description_ingredient");
-    isUnit.textContent = unit;
+    isUnit.classList.add("card_description_unit");
 
-    const allIngredient = document.createElement("div");
-    allIngredient.classList.add("card_description_ingredient");
+    ingredients.forEach((val) => {
+      isIngredient.textContent = val.ingredient;
 
-    allIngredient.appendChild(isIngredient);
-    allIngredient.appendChild(isQuantity);
-    allIngredient.appendChild(isUnit);
+      isQuantity.textContent = val.quantity;
 
-    const ingredientWord = "INGREDIENT";
-    const isNumberIngredient = document.createElement("div");
-    isNumberIngredient.classList.add("card_description");
+      isUnit.textContent = val.unit;
 
-    const descriptionIsNumberIngredient = document.createElement("div");
-    descriptionIsNumberIngredient.classList.add("card_description");
-    descriptionIsNumberIngredient.textContent = ingredientWord;
-
-    console.log("allIngredient1", allIngredient);
-    // console.log("allIngredient2", allIngredient2);
-    // console.log("allIngredient3", allIngredient3);
-
-    descriptionIsNumberIngredient.appendChild(allIngredient);
-    // descriptionIsNumberIngredient.appendChild(allIngredient2);
-    // descriptionIsNumberIngredient.appendChild(allIngredient3);
+      console.log("ingredient", val.ingredient, val.quantity, val.unit);
+    });
 
     const recipe = "RECETTE";
     const isDescription = document.createElement("div");
-    isDescription.classList.add("card_description");
+    isDescription.classList.add("card_description_recipe");
     isDescription.textContent = description;
 
     const descriptionRecipe = document.createElement("div");
     descriptionRecipe.classList.add("card_description");
-    descriptionRecipe.textContent = recipe;
+    const descriptionRecipeWord = document.createElement("div");
+    descriptionRecipeWord.classList.add("card_description_word");
+    descriptionRecipeWord.textContent = recipe;
+    descriptionRecipe.appendChild(descriptionRecipeWord);
     descriptionRecipe.appendChild(isDescription);
 
     const isUstensils = document.createElement("div");
@@ -133,12 +76,27 @@ export function mealFactory(data) {
     isappliance.classList.add("card_description_appliance");
     isappliance.textContent = appliance;
 
+    const ingredientWord = "INGREDIENT";
+    const isNumberIngredient = document.createElement("div");
+    isNumberIngredient.classList.add("card_description");
+
+    const descriptionIsNumberIngredient = document.createElement("div");
+    descriptionIsNumberIngredient.classList.add("card_description_word");
+    descriptionIsNumberIngredient.textContent = ingredientWord;
+
     console.log("descriptionIsNumberIngredient", descriptionIsNumberIngredient);
+
+    const descriptionDetailsIngredient = document.createElement("div");
+    descriptionDetailsIngredient.classList.add("card_description_details");
+    descriptionDetailsIngredient.appendChild(isIngredient);
+    descriptionDetailsIngredient.appendChild(isQuantity);
+    descriptionDetailsIngredient.appendChild(isUnit);
 
     card.appendChild(isImage);
     card.appendChild(isName);
     card.appendChild(descriptionRecipe);
     card.appendChild(descriptionIsNumberIngredient);
+    card.appendChild(descriptionDetailsIngredient);
 
     return card;
   }
