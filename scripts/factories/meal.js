@@ -30,19 +30,31 @@ export function mealFactory(data) {
     isImage.classList.add("card_description_img");
     isImage.setAttribute("src", Image);
 
-    const isIngredient = document.createElement("div");
+    const isIngredient = document.createElement("li");
     isIngredient.classList.add("card_description_ingredient");
-    const isQuantity = document.createElement("div");
+    const isQuantity = document.createElement("li");
     isQuantity.classList.add("card_description_quantity");
-    const isUnit = document.createElement("div");
+    const isUnit = document.createElement("li");
     isUnit.classList.add("card_description_unit");
 
+    const descriptionDetailsIngredient = document.createElement("ul");
+    descriptionDetailsIngredient.classList.add("card_description_details");
+
     ingredients.forEach((val) => {
+      const isIngredient = document.createElement("li");
+      isIngredient.classList.add("card_description_ingredient");
       isIngredient.textContent = val.ingredient;
+      descriptionDetailsIngredient.appendChild(isIngredient);
 
+      const isQuantity = document.createElement("li");
+      isQuantity.classList.add("card_description_quantity");
       isQuantity.textContent = val.quantity;
+      descriptionDetailsIngredient.appendChild(isQuantity);
 
+      const isUnit = document.createElement("li");
+      isUnit.classList.add("card_description_unit");
       isUnit.textContent = val.unit;
+      descriptionDetailsIngredient.appendChild(isUnit);
 
       console.log("ingredient", val.ingredient, val.quantity, val.unit);
     });
@@ -86,7 +98,6 @@ export function mealFactory(data) {
 
     console.log("descriptionIsNumberIngredient", descriptionIsNumberIngredient);
 
-    const descriptionDetailsIngredient = document.createElement("div");
     descriptionDetailsIngredient.classList.add("card_description_details");
     descriptionDetailsIngredient.appendChild(isIngredient);
     descriptionDetailsIngredient.appendChild(isQuantity);
