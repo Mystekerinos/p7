@@ -6,6 +6,8 @@ font-family: "DM Sans", sans-serif;
 
 form{
     background-color: lightgrey;
+    margin-left:11%;
+    margin-right:11%;
 }
 
 
@@ -43,12 +45,12 @@ header h2 {
 
 .searchBar {
     bottom:240px;
-    left:137px;
+    left:14%;
     display:flex;
     justify-content: center;
     position:relative;
     background-color: #FFFFFF;
-    width: 76%;
+    width: 68%;
     
     border-radius: 5px;
     
@@ -68,6 +70,7 @@ input {
     display:flex;
     flex-direction: row;
     margin-bottom:41px;
+    margin-left:31px;
 }
 
 .moreThanOneThousandFiveHundredRecipes{
