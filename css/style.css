@@ -4,6 +4,12 @@ font-family: "DM Sans", sans-serif;
     height: 100%;
 }
 
+form{
+    background-color: lightgrey;
+    margin-left:11%;
+    margin-right:11%;
+}
+
 
 .smallMealLogo{
     rotate:360deg;
@@ -37,14 +43,14 @@ header h2 {
 
 
 
-form {
+.searchBar {
     bottom:240px;
-    left:137px;
+    left:14%;
     display:flex;
     justify-content: center;
     position:relative;
     background-color: #FFFFFF;
-    width: 76%;
+    width: 68%;
     
     border-radius: 5px;
     
@@ -63,10 +69,14 @@ input {
 .searchButton{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: lightgrey ;
+    margin-bottom:41px;
+    margin-left:31px;
 }
 
+.moreThanOneThousandFiveHundredRecipes{
+    rotate:360deg;
+    margin-left:442px;
+}
 
 .Sbutton{
     border-radius: 11px;
@@ -76,7 +86,8 @@ input {
     padding:12px;
     left:23px;
     display:flex;
-    margin-left:10px;
+    margin-left:23px;
+    margin-right:23px;
     position:relative;
     align-items: center;
 }
@@ -731,7 +742,7 @@ img{
 .card{
     border:solid black;
     width:380px;
-    height:731px;
+    height:846px;
     border-radius: 21px;
     background-color: #FFFFFF;
 }
@@ -740,9 +751,7 @@ img{
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
-    gap:45px;
-    background-color: lightgrey;
-    
+    gap:45px;   
 }
 
 .card_description_img{
@@ -762,19 +771,46 @@ img{
 .card_description_recipe{
     padding:23px;
     padding-right:23px;
+    
 }
 
 .card_description_word {
     margin-left:23px;
     font-size:12px;
+    color:#7A7A7A;
 }
 
-.card_description_details{
-    display:flex;
-    align-items:center;
-    margin-left: 23px;
+.card_description_details {
+    column-count: 2;
+    /* Set the number of columns */
+    column-gap: 106px;
+    /* Set the gap between columns */
+    display: flex;
+    /* Create a flex container */
+    flex-direction: row;
+    /* Arrange columns horizontally */
+    flex-wrap: wrap;
+    /* Wrap items to the next line */
+    row-gap:23px;
+}
+
+.card_description_item {
+    width: calc(50% - 10px);
+    /* Set width for each column with gap */
+    margin-bottom: 10px;
+    /* Add some space between items */
+    color:#7A7A7A;
 }
 
 .card_description_quantity{
     margin-left:5px;
+}
+
+.card_description_itemIngredient{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_description_allIngredient{
+    margin-left:23px;
 }
