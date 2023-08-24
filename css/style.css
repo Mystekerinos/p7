@@ -4,6 +4,10 @@ font-family: "DM Sans", sans-serif;
     height: 100%;
 }
 
+form{
+    background-color: lightgrey;
+}
+
 
 .smallMealLogo{
     rotate:360deg;
@@ -37,7 +41,7 @@ header h2 {
 
 
 
-form {
+.searchBar {
     bottom:240px;
     left:137px;
     display:flex;
@@ -63,10 +67,13 @@ input {
 .searchButton{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: lightgrey ;
+    margin-bottom:41px;
 }
 
+.moreThanOneThousandFiveHundredRecipes{
+    rotate:360deg;
+    margin-left:442px;
+}
 
 .Sbutton{
     border-radius: 11px;
@@ -76,7 +83,8 @@ input {
     padding:12px;
     left:23px;
     display:flex;
-    margin-left:10px;
+    margin-left:23px;
+    margin-right:23px;
     position:relative;
     align-items: center;
 }
@@ -740,9 +748,7 @@ img{
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
-    gap:45px;
-    background-color: lightgrey;
-    
+    gap:45px;   
 }
 
 .card_description_img{
