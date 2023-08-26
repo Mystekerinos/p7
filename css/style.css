@@ -26,6 +26,8 @@ header h1{
     right:23px;
     margin-left:5%;
     position: relative;
+    margin-top:0px;
+    margin-bottom:0px;
     display: flex;
     justify-content: center;
     align-items: center;
