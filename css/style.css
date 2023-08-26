@@ -785,10 +785,6 @@ img{
 
 .card_description_details {
     column-count: 2;
-    /* Set the number of columns */
-    column-gap: 106px;
-    /* Set the gap between columns */
-    display: flex;
     /* Create a flex container */
     flex-direction: row;
     /* Arrange columns horizontally */
@@ -798,22 +794,24 @@ img{
 }
 
 .card_description_item {
-    width: calc(50% - 10px);
     /* Set width for each column with gap */
     margin-bottom: 10px;
     /* Add some space between items */
     color:#7A7A7A;
 }
 
-.card_description_quantity{
-    margin-left:5px;
-}
+
 
 .card_description_itemIngredient{
     display: flex;
     flex-direction: column;
+    padding-bottom:10px;
+    font-size:14px;
+    align-items:baseline;
 }
 
-.card_description_allIngredient{
-    margin-left:23px;
+.card_description_allIngredient {
+    margin:20px;
 }
+
+
