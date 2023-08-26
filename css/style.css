@@ -54,7 +54,7 @@ header h2 {
     position:relative;
     background-color: #FFFFFF;
     width: 68%;
-    
+    height:82px;
     border-radius: 5px;
     
     flex-direction: row;
@@ -105,7 +105,9 @@ img{
     height:61px;
     width:71px;
     top:0px;
+    margin-right:11px;
     left:-1px;
+    border-radius:10px;
 }
 /*** tags section ***/
 
@@ -745,7 +747,7 @@ img{
 .card{
     border:solid black;
     width:380px;
-    height:846px;
+    height:731px;
     border-radius: 21px;
     background-color: #FFFFFF;
 }
