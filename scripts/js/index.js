@@ -32,9 +32,11 @@ const btnDropDownUstensiles = document.getElementById("dropbtnUstensiles");
 function myOpenFunctionIngredients() {
   dropDownIngredients.style.display = "block";
 }
+
 function myOpenFunctionAppareils() {
   dropDownAppareils.style.display = "block";
 }
+
 function myOpenFunctionUstensiles() {
   dropDownUstensiles.style.display = "block";
 }

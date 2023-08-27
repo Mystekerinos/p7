@@ -10,6 +10,7 @@ export function mealFactory(data) {
     ustensils,
   } = data;
 
+  //desconcstruction ingredients
   const [ingredientOne] = ingredients;
 
   console.log("ingredientOne", ingredientOne);
