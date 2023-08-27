@@ -23,16 +23,43 @@
      <div class="searchButton ">
    
     <div class="Sbutton">
-       <label class="selector">Ingrédients</label>
-       <img src="/assets/Images/arrow.svg" alt="bouton ingrédients"/>  
+        <div class="dropdown">
+            <label   class="dropbtn" id="dropbtnIngredients">Ingrédients
+                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+            </label>
+           
+            <div id="myDropdownIngredients" class="dropdown-content">
+                <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
+            <div class="element_ingredients">
+            </div>
+            </div>
+        </div> 
     </div>
     <div class="Sbutton">
-    <label class="selector">Appareils</label>
-    <img src="/assets/Images/arrow.svg" alt="bouton appareils"/> 
+        <div class="dropdown">
+            <label class="dropbtn" id="dropbtnAppareils">Appareils
+                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+            </label>
+    
+            <div id="myDropdownAppareils" class="dropdown-content">
+                <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
+                <div class="element_appareils">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="Sbutton">
-    <label class="selector">Ustensiles</label>
-    <img src="/assets/Images/arrow.svg" alt="bouton ustensiles"/> 
+        <div class="dropdown">
+            <label class="dropbtn" id="dropbtnUstensiles">Ustensiles
+                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+            </label>
+    
+            <div id="myDropdownUstensiles" class="dropdown-content">
+                <input type="text" placeholder="Search.."  class="myInput" onkeyup="filterFunction()">
+                <div class="element_ustensiles">
+                </div>
+            </div>
+        </div>
     </div>
     <img class="moreThanOneThousandFiveHundredRecipes" src="/assets/Images/moreThanOneThousandFiveHundredRecipes.svg" alt="Logo 1500 recettes"/> 
     </div>

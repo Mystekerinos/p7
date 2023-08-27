@@ -81,10 +81,6 @@ export function mealFactory(data) {
     descriptionRecipe.appendChild(descriptionRecipeWord);
     descriptionRecipe.appendChild(isDescription);
 
-    const isUstensils = document.createElement("div");
-    isUstensils.classList.add("card_description_ustensils");
-    isUstensils.textContent = ustensils;
-
     const isTime = document.createElement("div");
     isTime.classList.add("card_description_time");
     isTime.textContent = time;
@@ -92,10 +88,6 @@ export function mealFactory(data) {
     const isServings = document.createElement("div");
     isServings.classList.add("card_description_appliance");
     isServings.textContent = servings;
-
-    const isappliance = document.createElement("div");
-    isappliance.classList.add("card_description_appliance");
-    isappliance.textContent = appliance;
 
     const ingredientWord = "INGREDIENT";
     const isNumberIngredient = document.createElement("div");
@@ -120,7 +112,35 @@ export function mealFactory(data) {
 
     return card;
   }
+
+  function searchButtonIngredient() {
+    console.log("ingredients", ingredients);
+    const isSearchIngredient = document.createElement("div");
+    isSearchIngredient.classList.add("card_description_isSearchIngredient");
+    ingredients.forEach((val) => {
+      isSearchIngredient.textContent = val.ingredient;
+    });
+    return isSearchIngredient;
+  }
+
+  console.log("ingredients", ingredients);
+  function searchButtonUstensiles() {
+    const isUstensils = document.createElement("div");
+    isUstensils.classList.add("card_description_ustensils");
+    isUstensils.textContent = ustensils;
+    return isUstensils;
+  }
+  function searchButtonAppareiles() {
+    const isAppliance = document.createElement("div");
+    isAppliance.classList.add("card_description_appliance");
+    isAppliance.textContent = appliance;
+    return isAppliance;
+  }
+
   return {
+    searchButtonIngredient,
     getMealCardDom,
+    searchButtonUstensiles,
+    searchButtonAppareiles,
   };
 }
