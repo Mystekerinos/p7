@@ -25,9 +25,9 @@ async function displayData(recipes) {
 const dropDownIngredients = document.getElementById("myDropdownIngredients");
 const dropDownAppareils = document.getElementById("myDropdownAppareils");
 const dropDownUstensiles = document.getElementById("myDropdownUstensiles");
-const btnDropDownIngredient = document.getElementById("dropbtnIngredients");
-const btnDropDownAppareils = document.getElementById("dropbtnAppareils");
-const btnDropDownUstensiles = document.getElementById("dropbtnUstensiles");
+const btnDropDownIngredient = document.getElementById("dropbtnIngredientsFold");
+const btnDropDownAppareils = document.getElementById("dropbtnAppareilsFold");
+const btnDropDownUstensiles = document.getElementById("dropbtnUstensilesFold");
 
 function myOpenFunctionIngredients() {
   dropDownIngredients.style.display = "block";
