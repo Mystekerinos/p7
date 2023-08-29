@@ -30,6 +30,16 @@ const dropDownUstensiles = document.getElementById("myDropdownUstensiles");
 const btnDropDownIngredient = document.getElementById("dropbtnIngredientsFold");
 const btnDropDownAppareils = document.getElementById("dropbtnAppareilsFold");
 const btnDropDownUstensiles = document.getElementById("dropbtnUstensilesFold");
+// Close Button
+const btnDropDownIngredientClose = document.getElementById(
+  "dropbtnIngredientsUnFold"
+);
+const btnDropDownAppareilsClose = document.getElementById(
+  "dropbtnAppareilsUnFold"
+);
+const btnDropDownUstensilesClose = document.getElementById(
+  "dropbtnUstensilesUnfold"
+);
 
 function myOpenFunctionIngredients() {
   dropDownIngredients.style.display = "block";
@@ -47,29 +57,24 @@ btnDropDownIngredient.addEventListener("click", myOpenFunctionIngredients);
 btnDropDownAppareils.addEventListener("click", myOpenFunctionAppareils);
 btnDropDownUstensiles.addEventListener("click", myOpenFunctionUstensiles);
 
-// Close Button
-// const btnDropDownIngredientClose = document.getElementById("dropbtnIngredients");
-// const btnDropDownAppareilsClose = document.getElementById("dropbtnAppareils");
-// const btnDropDownUstensilesClose = document.getElementById("dropbtnUstensiles");
+function myCloseFunctionIngredients() {
+  dropDownIngredients.style.display = "none";
+}
 
-// function myCloseFunctionIngredients() {
-//   dropDownIngredients.style.display = "none";
-// }
+function myCloseFunctionAppareils() {
+  dropDownAppareils.style.display = "none";
+}
 
-// function myCloseFunctionAppareils() {
-//   dropDownAppareils.style.display = "none";
-// }
+function myCloseFunctionUstensiles() {
+  dropDownUstensiles.style.display = "none";
+}
 
-// function myCloseFunctionUstensiles() {
-//   dropDownUstensiles.style.display = "none";
-// }
-
-// btnDropDownIngredientClose.addEventListener(
-//   "click",
-//   myCloseFunctionIngredients
-// );
-// btnDropDownAppareilsClose.addEventListener("click", myCloseFunctionAppareils);
-// btnDropDownUstensilesClose.addEventListener("click", myCloseFunctionUstensiles);
+btnDropDownIngredientClose.addEventListener(
+  "click",
+  myCloseFunctionIngredients
+);
+btnDropDownAppareilsClose.addEventListener("click", myCloseFunctionAppareils);
+btnDropDownUstensilesClose.addEventListener("click", myCloseFunctionUstensiles);
 
 function filterFunction() {
   var input, filter, ul, li, a, i;

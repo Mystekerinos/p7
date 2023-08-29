@@ -76,7 +76,7 @@ input {
     display: flex;
     flex-direction: row;
     margin-bottom: 41px;
-    margin-left: 31px;
+    margin-left: -51px;
 }
 
 .moreThanOneThousandFiveHundredRecipes {
@@ -98,7 +98,7 @@ input {
 }
 
 img {
-    margin-left: 56px;
+    margin-left: 96px;
     rotate: 90deg;
 }
 
@@ -825,7 +825,7 @@ img {
 .dropbtn {
     border-radius: 11px;
     background-color: #FFFFFF;
-    width: 170px;
+    width: 190px;
     padding: 12px;
     left: 23px;
     display: flex;
@@ -850,6 +850,7 @@ img {
     border: 1px solid #C6C6C6;
     border-radius: 2px 2px 2px 2px;
     border-bottom: 1px solid #ddd;
+    color:black;
 }
 
 .dropdown-contentUnfold {
@@ -930,5 +931,5 @@ img {
     position: relative;
     bottom: 36px;
     rotate: -7deg;
-    left: 113px;
+    left: 73px;
 }
