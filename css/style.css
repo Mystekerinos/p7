@@ -1,43 +1,45 @@
-body{
-font-family: "DM Sans", sans-serif;
+body {
+    font-family: "DM Sans", sans-serif;
     margin: 0;
     height: 100%;
 }
 
-form{
+form {
     background-color: lightgrey;
-    margin-left:11%;
-    margin-right:11%;
+    margin-left: 11%;
+    margin-right: 11%;
 }
 
 
-.smallMealLogo{
-    rotate:360deg;
-    margin-top:23px;
-    margin-left:12%;
+.smallMealLogo {
+    rotate: 360deg;
+    margin-top: 23px;
+    margin-left: 12%;
 }
-.header{
-    width:100%;
-    height:586px;
+
+.header {
+    width: 100%;
+    height: 586px;
     background: url(/assets/Images/homePageImage.jpeg) center center /1404px 854px no-repeat;
 }
-header h1{
-    top:137px;
-    right:23px;
-    margin-left:5%;
+
+header h1 {
+    top: 137px;
+    right: 23px;
+    margin-left: 5%;
     position: relative;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 44px;
-    color:#FFD15B;
+    color: #FFD15B;
 }
 
 header h2 {
     top: 5px;
-   left: 15rem;
+    left: 15rem;
     padding-right: 23px;
     position: relative;
 
@@ -47,16 +49,16 @@ header h2 {
 
 
 .searchBar {
-    bottom:240px;
-    left:18%;
-    display:flex;
+    bottom: 240px;
+    left: 18%;
+    display: flex;
     justify-content: center;
-    position:relative;
+    position: relative;
     background-color: #FFFFFF;
     width: 68%;
-    height:82px;
+    height: 82px;
     border-radius: 5px;
-    
+
     flex-direction: row;
     align-items: center;
 }
@@ -69,45 +71,47 @@ input {
     width: 100%;
     padding: 6px 10px;
 }
-.searchButton{
-    display:flex;
+
+.searchButton {
+    display: flex;
     flex-direction: row;
-    margin-bottom:41px;
-    margin-left:31px;
+    margin-bottom: 41px;
+    margin-left: 31px;
 }
 
-.moreThanOneThousandFiveHundredRecipes{
-    rotate:360deg;
-    margin-left:442px;
+.moreThanOneThousandFiveHundredRecipes {
+    rotate: 360deg;
+    margin-left: 442px;
 }
 
-.Sbutton{
+.Sbutton {
     border-radius: 11px;
-  
-    width:170px;
-    padding:12px;
-    left:23px;
-    display:flex;
-    margin-left:23px;
-    margin-right:23px;
-    position:relative;
+
+    width: 170px;
+    padding: 12px;
+    left: 23px;
+    display: flex;
+    margin-left: 23px;
+    margin-right: 23px;
+    position: relative;
     align-items: center;
 }
 
-img{
-    margin-left:56px;
-    rotate:90deg;
+img {
+    margin-left: 56px;
+    rotate: 90deg;
 }
 
-.searchButon{
+.searchButon {
     background: url(/assets/Images/headeBackground.svg) center center/ 78px 78px no-repeat;
-    height:61px;
-    width:71px;
-    top:0px;
-    margin-right:11px;
-    left:-1px;
-    border-radius:10px;
+    height: 61px;
+    width: 71px;
+    top: 0px;
+    margin-right: 11px;
+    left: -1px;
+    border-radius: 10px;
 }
+
 /*** tags section ***/
 
 
@@ -227,7 +231,7 @@ img{
 
 .filter__ingredients--template input::placeholder {
     color: rgba(255, 255, 255, 0.5);
-   
+
 }
 
 .filter__ingredients--close {
@@ -743,45 +747,46 @@ img{
 }
 
 /* styles CSS*/
-.card{
-    border:solid black;
-    width:380px;
-    height:731px;
+.card {
+    border: solid black;
+    width: 380px;
+    height: 731px;
     border-radius: 21px;
     background-color: #FFFFFF;
 }
 
-.meal_section{
-    display:flex;
+.meal_section {
+    display: flex;
     justify-content: center;
-    flex-wrap:wrap;
-    gap:45px;   
+    flex-wrap: wrap;
+    gap: 45px;
 }
 
-.card_description_img{
-    margin-left:0px;
-    rotate:0deg;
-    width:100%;
-    height:253px;
+.card_description_img {
+    margin-left: 0px;
+    rotate: 0deg;
+    width: 100%;
+    height: 253px;
     object-fit: cover;
     border-radius: 21px 21px 0px 0px;
 }
-.card_name{
-    font-size:18px;
-    font-weight:bold ;
-    margin:23px;
+
+.card_name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 23px;
 }
 
-.card_description_recipe{
-    padding:23px;
-    padding-right:23px;
-    
+.card_description_recipe {
+    padding: 23px;
+    padding-right: 23px;
+
 }
 
 .card_description_word {
-    margin-left:23px;
-    font-size:12px;
-    color:#7A7A7A;
+    margin-left: 23px;
+    font-size: 12px;
+    color: #7A7A7A;
 }
 
 .card_description_details {
@@ -791,28 +796,28 @@ img{
     /* Arrange columns horizontally */
     flex-wrap: wrap;
     /* Wrap items to the next line */
-    row-gap:23px;
+    row-gap: 23px;
 }
 
 .card_description_item {
     /* Set width for each column with gap */
     margin-bottom: 10px;
     /* Add some space between items */
-    color:#7A7A7A;
+    color: #7A7A7A;
 }
 
 
 
-.card_description_itemIngredient{
+.card_description_itemIngredient {
     display: flex;
     flex-direction: column;
-    padding-bottom:10px;
-    font-size:14px;
-    align-items:baseline;
+    padding-bottom: 10px;
+    font-size: 14px;
+    align-items: baseline;
 }
 
 .card_description_allIngredient {
-    margin:20px;
+    margin: 20px;
 }
 
 
@@ -820,16 +825,16 @@ img{
 .dropbtn {
     border-radius: 11px;
     background-color: #FFFFFF;
-        width: 170px;
-        padding: 12px;
-        left: 23px;
-        display: flex;
-        margin-left: 2px;
-        margin-right: 23px;
-        position: relative;
-        align-items: center;
-        
-        
+    width: 170px;
+    padding: 12px;
+    left: 23px;
+    display: flex;
+    margin-left: 2px;
+    margin-right: 23px;
+    position: relative;
+    align-items: center;
+
+
 }
 
 
@@ -841,10 +846,23 @@ img{
     background-position: 14px 12px;
     background-repeat: no-repeat;
     font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    border-radius:2px 2px 2px 2px;
+    margin-bottom: 13px;
+    border: 1px solid #C6C6C6;
+    border-radius: 2px 2px 2px 2px;
     border-bottom: 1px solid #ddd;
+}
+
+.dropdown-contentUnfold {
+    border-radius: 11px;
+    background-color: #FFFFFF;
+    width: 170px;
+    padding: 12px;
+    left: 13px;
+    display: flex;
+    margin-left: 2px;
+    margin-right: 23px;
+    position: relative;
+    align-items: center;
 }
 
 /* The search field when it gets focus/clicked on */
@@ -859,15 +877,15 @@ img{
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-contentUnfold {
     display: none;
     position: absolute;
     background-color: #FFFFFF;
     width: 192px;
     border: 1px solid #C6C6C6;
     z-index: 1;
-    
-    left:25px;
+    top: 0px;
+    left: 20px;
 }
 
 /* Links inside the dropdown */
@@ -888,3 +906,29 @@ img{
     display: block;
 }
 
+
+.card_dropDown_button {
+    border: black;
+}
+
+
+.dropbtnUnFold {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 1px;
+    font-size: 16px;
+}
+
+.arrowUnFold {
+
+    margin-left: 95px;
+    rotate: 270deg;
+}
+
+.magnifyingGlassButton {
+    position: relative;
+    bottom: 36px;
+    rotate: -7deg;
+    left: 113px;
+}
