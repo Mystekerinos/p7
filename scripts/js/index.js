@@ -8,14 +8,16 @@ async function displayData(recipes) {
   const ingredientButton = document.querySelector(".element_ingredients");
   const appareilButton = document.querySelector(".element_appareils");
   const ustensilesButton = document.querySelector(".element_ustensiles");
-  console.log("mealsSection", mealsSection);
+
   recipes.forEach((meal) => {
     const mealModel = mealFactory(meal, 0);
     const mealName = mealModel.getMealCardDom();
     mealsSection.appendChild(mealName);
+    console.log("mealName", mealName);
     const ingredientElement = mealModel.searchButtonIngredient();
     ingredientButton.appendChild(ingredientElement);
-    const appareilElement = mealModel.searchButtonAppareiles();
+
+    const appareilElement = mealModel.searchButtonAppareils();
     appareilButton.appendChild(appareilElement);
     const ustensilesElement = mealModel.searchButtonUstensiles();
     ustensilesButton.appendChild(ustensilesElement);
@@ -25,9 +27,9 @@ async function displayData(recipes) {
 const dropDownIngredients = document.getElementById("myDropdownIngredients");
 const dropDownAppareils = document.getElementById("myDropdownAppareils");
 const dropDownUstensiles = document.getElementById("myDropdownUstensiles");
-const btnDropDownIngredient = document.getElementById("dropbtnIngredients");
-const btnDropDownAppareils = document.getElementById("dropbtnAppareils");
-const btnDropDownUstensiles = document.getElementById("dropbtnUstensiles");
+const btnDropDownIngredient = document.getElementById("dropbtnIngredientsFold");
+const btnDropDownAppareils = document.getElementById("dropbtnAppareilsFold");
+const btnDropDownUstensiles = document.getElementById("dropbtnUstensilesFold");
 
 function myOpenFunctionIngredients() {
   dropDownIngredients.style.display = "block";
@@ -44,6 +46,30 @@ function myOpenFunctionUstensiles() {
 btnDropDownIngredient.addEventListener("click", myOpenFunctionIngredients);
 btnDropDownAppareils.addEventListener("click", myOpenFunctionAppareils);
 btnDropDownUstensiles.addEventListener("click", myOpenFunctionUstensiles);
+
+// Close Button
+// const btnDropDownIngredientClose = document.getElementById("dropbtnIngredients");
+// const btnDropDownAppareilsClose = document.getElementById("dropbtnAppareils");
+// const btnDropDownUstensilesClose = document.getElementById("dropbtnUstensiles");
+
+// function myCloseFunctionIngredients() {
+//   dropDownIngredients.style.display = "none";
+// }
+
+// function myCloseFunctionAppareils() {
+//   dropDownAppareils.style.display = "none";
+// }
+
+// function myCloseFunctionUstensiles() {
+//   dropDownUstensiles.style.display = "none";
+// }
+
+// btnDropDownIngredientClose.addEventListener(
+//   "click",
+//   myCloseFunctionIngredients
+// );
+// btnDropDownAppareilsClose.addEventListener("click", myCloseFunctionAppareils);
+// btnDropDownUstensilesClose.addEventListener("click", myCloseFunctionUstensiles);
 
 function filterFunction() {
   var input, filter, ul, li, a, i;

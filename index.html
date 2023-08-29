@@ -9,66 +9,83 @@
 
 <body>
     <header class="header">
-        <img class="smallMealLogo" src="/assets/Images/smallmealLogo.svg" alt="Logo petit plat"/>
-       <h1> CHERCHEZ PARMI PLUS DE 1500 RECETTES </h1>
+        <img class="smallMealLogo" src="/assets/Images/smallmealLogo.svg" alt="Logo petit plat" />
+        <h1> CHERCHEZ PARMI PLUS DE 1500 RECETTES </h1>
         <h1>DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
     </header>
 
-    <main >
-<form id="form">
-    <div class="searchBar">
-    <input type="search" id="query" name="q" placeholder="Rechercher une recette, un ingrédient,...">
-    <button class="searchButon"></button> 
-    </div>
-     <div class="searchButton ">
-   
-    <div class="Sbutton">
-        <div class="dropdown">
-            <label   class="dropbtn" id="dropbtnIngredients">Ingrédients
-                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
-            </label>          
-            <div id="myDropdownIngredients" class="dropdown-content">
-                <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
-            <div class="element_ingredients">
+    <main>
+        <form id="form">
+            <div class="searchBar">
+                <input type="search" id="query" name="q" placeholder="Rechercher une recette, un ingrédient,...">
+                <button class="searchButon"></button>
             </div>
-            </div>
-        </div> 
-    </div>
-    <div class="Sbutton">
-        <div class="dropdown">
-            <label class="dropbtn" id="dropbtnAppareils">Appareils
-                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
-            </label>
-    
-            <div id="myDropdownAppareils" class="dropdown-content">
-                <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
-                <div class="element_appareils">
+            <div class="searchButton ">
+
+                <div class="Sbutton">
+                    <div class="dropdown">
+                        <label class="dropbtn" id="dropbtnIngredientsFold">Ingredients
+                            <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                        </label>
+
+                        <div id="myDropdownIngredients" class="dropdown-contentUnfold">
+                            <label class="dropbtnUnFold" id="dropbtnIngredientsUnfold">Ingredients
+                                <img class="arrowUnFold" src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                            </label>
+                            <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
+                            <img class="magnifyingGlassButton" src="/assets/Images/magnifyingGlassButton.svg"
+                                alt="bouton ingrédients" />
+                            <div class="element_ingredients">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="Sbutton">
-        <div class="dropdown">
-            <label class="dropbtn" id="dropbtnUstensiles">Ustensiles
-                <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
-            </label>
-    
-            <div id="myDropdownUstensiles" class="dropdown-content">
-                <input type="text" placeholder="Search.."  class="myInput" onkeyup="filterFunction()">
-                <div class="element_ustensiles">
+                <div class="Sbutton">
+                    <div class="dropdown">
+                        <label class="dropbtn" id="dropbtnAppareilsFold">Appareils
+                            <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                        </label>
+
+                        <div id="myDropdownAppareils" class="dropdown-contentUnfold">
+                            <label class="dropbtnUnFold" id="dropbtnAppareilsUnfold">Appareils
+                                <img class="arrowUnFold" src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                            </label>
+                            <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
+                            <img class="magnifyingGlassButton" src="/assets/Images/magnifyingGlassButton.svg"
+                                alt="bouton ingrédients" />
+                            <div class="element_appareils">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="Sbutton">
+                    <div class="dropdown">
+                        <label class="dropbtn" id="dropbtnUstensilesFold">Ustensiles
+                            <img src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                        </label>
+
+                        <div id="myDropdownUstensiles" class="dropdown-contentUnfold">
+                            <label class="dropbtnUnFold" id="dropbtnUstensilesUnfold">Ustensiles
+                                <img class="arrowUnFold" src="/assets/Images/arrow.svg" alt="bouton ingrédients" />
+                            </label>
+                            <input type="text" placeholder="Search.." class="myInput" onkeyup="filterFunction()">
+                            <img class="magnifyingGlassButton" src="/assets/Images/magnifyingGlassButton.svg"
+                                alt="bouton ingrédients" />
+                            <div class="element_ustensiles">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="moreThanOneThousandFiveHundredRecipes"
+                    src="/assets/Images/moreThanOneThousandFiveHundredRecipes.svg" alt="Logo 1500 recettes" />
             </div>
-        </div>
-    </div>
-    <img class="moreThanOneThousandFiveHundredRecipes" src="/assets/Images/moreThanOneThousandFiveHundredRecipes.svg" alt="Logo 1500 recettes"/> 
-    </div>
-    
-    <div class="meal_section">
-    </div>
-    </form>
+
+            <div class="meal_section">
+            </div>
+        </form>
     </main>
     <script type="module" src="scripts/js/index.js"></script>
-    
+
 </body>
 
 </html>

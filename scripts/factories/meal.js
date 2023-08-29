@@ -115,33 +115,34 @@ export function mealFactory(data) {
   }
 
   function searchButtonIngredient() {
-    console.log("ingredients", ingredients);
     const isSearchIngredient = document.createElement("div");
     isSearchIngredient.classList.add("card_description_isSearchIngredient");
+    console.log("ingredients", ingredients);
     ingredients.forEach((val) => {
       isSearchIngredient.textContent = val.ingredient;
     });
+    console.log("isSearchIngredient", isSearchIngredient);
     return isSearchIngredient;
   }
 
-  console.log("ingredients", ingredients);
-  function searchButtonUstensiles() {
-    const isUstensils = document.createElement("div");
-    isUstensils.classList.add("card_description_ustensils");
-    isUstensils.textContent = ustensils;
-    return isUstensils;
-  }
-  function searchButtonAppareiles() {
+  function searchButtonAppareils() {
     const isAppliance = document.createElement("div");
     isAppliance.classList.add("card_description_appliance");
     isAppliance.textContent = appliance;
     return isAppliance;
   }
 
+  function searchButtonUstensiles() {
+    const isUstensils = document.createElement("div");
+    isUstensils.classList.add("card_description_ustensils");
+    isUstensils.textContent = ustensils;
+    return isUstensils;
+  }
+
   return {
-    searchButtonIngredient,
     getMealCardDom,
+    searchButtonIngredient,
+    searchButtonAppareils,
     searchButtonUstensiles,
-    searchButtonAppareiles,
   };
 }
