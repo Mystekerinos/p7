@@ -8,14 +8,16 @@ async function displayData(recipes) {
   const ingredientButton = document.querySelector(".element_ingredients");
   const appareilButton = document.querySelector(".element_appareils");
   const ustensilesButton = document.querySelector(".element_ustensiles");
-  console.log("mealsSection", mealsSection);
+
   recipes.forEach((meal) => {
     const mealModel = mealFactory(meal, 0);
     const mealName = mealModel.getMealCardDom();
     mealsSection.appendChild(mealName);
+    console.log("mealName", mealName);
     const ingredientElement = mealModel.searchButtonIngredient();
     ingredientButton.appendChild(ingredientElement);
-    const appareilElement = mealModel.searchButtonAppareiles();
+
+    const appareilElement = mealModel.searchButtonAppareils();
     appareilButton.appendChild(appareilElement);
     const ustensilesElement = mealModel.searchButtonUstensiles();
     ustensilesButton.appendChild(ustensilesElement);
