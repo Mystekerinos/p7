@@ -1,10 +1,12 @@
+const allIngredients = [];
+
 export function mealFactory(data) {
   const {
     id,
     name,
     time,
     servings,
-    ingredients,
+    ingredients = [],
     description,
     appliance,
     ustensils,
@@ -15,6 +17,7 @@ export function mealFactory(data) {
 
   console.log("ingredientOne", ingredientOne);
   console.log("data", data);
+  console.log("ingredients", ingredients);
   const Image = `assets/Recettes/${id}.jpg`;
   console.log("Image", Image);
 
@@ -114,6 +117,20 @@ export function mealFactory(data) {
     return card;
   }
 
+  allIngredients.push(...ingredients);
+  function getIngredients() {
+    allIngredients.push(...ingredients);
+    console.log("xxxx", allIngredients);
+    return allIngredients; // Assurez-vous que "ingredients" est une propriété contenant les données d'ingrédients
+  }
+
+  allIngredients.push(...ingredients);
+  function getIngredients() {
+    allIngredients.push(...ingredients);
+    console.log("xxxx", allIngredients);
+    return allIngredients; // Assurez-vous que "ingredients" est une propriété contenant les données d'ingrédients
+  }
+
   function searchButtonIngredient() {
     const isSearchIngredient = document.createElement("div");
     isSearchIngredient.classList.add("card_description_isSearchIngredient");
@@ -144,5 +161,7 @@ export function mealFactory(data) {
     searchButtonIngredient,
     searchButtonAppareils,
     searchButtonUstensiles,
+    getIngredients,
   };
 }
+export { allIngredients };
