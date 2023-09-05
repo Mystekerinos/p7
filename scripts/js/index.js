@@ -26,20 +26,20 @@ async function displayData(recipes) {
     const ingredientElement = mealModel.searchButtonIngredient();
     ingredientButton.appendChild(ingredientElement);
 
-    const isSearchIngredient = document.createElement("div");
-    isSearchIngredient.classList.add("card_description_isSearchUstensiles");
-    document
-      .querySelector(".element_ingredients")
-      .appendChild(isSearchIngredient);
+    // const isSearchIngredient = document.createElement("div");
+    // isSearchIngredient.classList.add("card_description_isSearchUstensiles");
+    // document
+    //   .querySelector(".element_ingredients")
+    //   .appendChild(isSearchIngredient);
 
-    const ustensilesElement = mealModel.searchButtonUstensiles();
-    ustensilesButton.appendChild(ustensilesElement);
+    // const ustensilesElement = mealModel.searchButtonUstensiles();
+    // ustensilesButton.appendChild(ustensilesElement);
 
-    const isSearchUstensiles = document.createElement("div");
-    isSearchUstensiles.classList.add("card_description_isSearchUstensiles");
-    document
-      .querySelector(".element_ingredients")
-      .appendChild(isSearchUstensiles);
+    // const isSearchUstensiles = document.createElement("div");
+    // isSearchUstensiles.classList.add("card_description_isSearchUstensiles");
+    // document
+    //   .querySelector(".element_ingredients")
+    //   .appendChild(isSearchUstensiles);
 
     // ...
 
@@ -145,32 +145,32 @@ function myCloseFunctionUstensiles() {
   dropDownUstensiles.style.display = "none";
 }
 
-btnDropDownIngredientClose.addEventListener(
-  "click",
-  myCloseFunctionIngredients
-);
-btnDropDownAppareilsClose.addEventListener("click", myCloseFunctionAppareils);
-btnDropDownUstensilesClose.addEventListener("click", myCloseFunctionUstensiles);
+// btnDropDownIngredientClose.addEventListener(
+//   "click",
+//   myCloseFunctionIngredients
+// );
+// btnDropDownAppareilsClose.addEventListener("click", myCloseFunctionAppareils);
+// btnDropDownUstensilesClose.addEventListener("click", myCloseFunctionUstensiles);
 
-ingredientsInput.addEventListener("keyup", () => {
-  const ingredientsValue = ingredientsInput.value.trim().toLowerCase();
-  console.log("Valeur saisie :", ingredientsValue);
-});
+// ingredientsInput.addEventListener("keyup", () => {
+//   const ingredientsValue = ingredientsInput.value.trim().toLowerCase();
+//   console.log("Valeur saisie :", ingredientsValue);
+// });
 
-appareilsInput.addEventListener("keyup", () => {
-  const appareilsValue = appareilsInput.value.trim().toLowerCase();
-  console.log("Valeur saisie :", appareilsValue);
-});
+// appareilsInput.addEventListener("keyup", () => {
+//   const appareilsValue = appareilsInput.value.trim().toLowerCase();
+//   console.log("Valeur saisie :", appareilsValue);
+// });
 
-ustensilesInput.addEventListener("keyup", () => {
-  const ustensilesValue = ustensilesInput.value.trim().toLowerCase();
-  console.log("Valeur saisie :", ustensilesValue);
-});
+// ustensilesInput.addEventListener("keyup", () => {
+//   const ustensilesValue = ustensilesInput.value.trim().toLowerCase();
+//   console.log("Valeur saisie :", ustensilesValue);
+// });
 
-console.log("ustensilesValue", ustensilesInput.value);
-console.log("appareilsValue", appareilsInput.value);
+// console.log("ustensilesValue", ustensilesInput.value);
+// console.log("appareilsValue", appareilsInput.value);
 
-console.log("mealFactory", mealFactory);
+// console.log("mealFactory", mealFactory);
 
 // Collects data from meals
 async function init() {
