@@ -750,7 +750,7 @@ img {
 .card {
     border: solid black;
     width: 380px;
-    /* height: 731px; */
+    height: 731px;
     border-radius: 21px;
     background-color: #FFFFFF;
 }
@@ -790,9 +790,8 @@ img {
 }
 
 .card_description_details {
-    /* column-count: 2; */
+    column-count: 2;
     /* Create a flex container */
-    display: flex;
     flex-direction: row;
     /* Arrange columns horizontally */
     flex-wrap: wrap;
@@ -815,7 +814,6 @@ img {
     padding-bottom: 10px;
     font-size: 14px;
     align-items: baseline;
-    width: 50%;
 }
 
 .card_description_allIngredient {

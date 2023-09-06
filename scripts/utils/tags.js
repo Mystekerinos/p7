@@ -7,12 +7,14 @@
 /** On sélectionne les items dans chaque filtre **/
 
 const filterItemIngredients = document.getElementsByClassName(
-  "element_ingredients"
+  "filter__ingredients--items"
 );
-const filterItemAppliances =
-  document.getElementsByClassName("element_appareils");
-const filterItemUstensils =
-  document.getElementsByClassName("element_ustensiles");
+const filterItemAppliances = document.getElementsByClassName(
+  "filter__appliances--items"
+);
+const filterItemUstensils = document.getElementsByClassName(
+  "filter__ustensils--items"
+);
 
 let tagIngredientAlreadyAdded = false;
 let tagApplianceAlreadyAdded = false;
