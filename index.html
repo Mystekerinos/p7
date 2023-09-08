@@ -21,10 +21,13 @@
 
 <body>
     <header class="header">
-        
+        <img class="smallMealLogo" src="/assets/Images/smallmealLogo.svg" alt="Logo petit plat" />
+        <h1> CHERCHEZ PARMI PLUS DE 1500 RECETTES </h1>
+        <h1>DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
     </header>
 
     <main class="main">
+        <form id="form">
         <section class="search">
             <div class="search__input-group">
                 <input type="text" class="search__input"
@@ -52,6 +55,7 @@
             <!-- CARDS COMPONENT JAVASCRIPTS recipes_cards.js -->
         </section>
         <span class="no-result-message"></span>
+        </form>
     </main>
     <script src="./scripts/main/index.js"></script>
     <script src="./scripts/main/recipes_cards.js"></script>
