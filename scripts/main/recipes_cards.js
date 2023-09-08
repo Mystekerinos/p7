@@ -55,7 +55,7 @@ function getRecipeCard(data) {
 
   const recipeName = document.createElement("h2");
   recipeName.textContent = name;
-  recipeName.className = "nom";
+  recipeName.className = "card_name";
 
   const spanIcon = document.createElement("span");
   spanIcon.className = "duration-icon";
