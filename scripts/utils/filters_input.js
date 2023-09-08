@@ -21,13 +21,13 @@ function getSearchIngredients() {
 /* Used on filters_recipes.js */
 // eslint-disable-next-line no-unused-vars
 function inputIngredient() {
-  const searchInputIngredient = document.getElementById("ingredientsInputId");
+  const searchInputIngredient = document.getElementById("ingredients-input");
   searchInputIngredient.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
-    clearTimeout(typingTimer);
+    // clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchIngredients, typeInterval);
+    getSearchIngredients();
   });
 }
 
@@ -101,28 +101,19 @@ function getSearchIngredients() {
   );
   const cards = document.querySelectorAll(".filter__ingredients--items");
   const searchQuery = document.getElementById("ingredients-input").value;
-
+  let tab = [];
   cards.forEach((card) => {
-    if (card.innerText.toLowerCase().includes(searchQuery.toLowerCase())) {
+    if (
+      card.innerText.toLowerCase().includes(searchQuery.toLowerCase()) &&
+      !tab.includes(card.innerText.toLowerCase())
+    ) {
       card.classList.remove("is-hidden");
+      tab.push(card.innerText.toLowerCase());
     } else {
       card.classList.add("is-hidden");
     }
   });
   return filterRender;
-}
-
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
-function inputIngredient() {
-  const searchInputIngredient = document.getElementById("ingredients-input");
-  searchInputIngredient.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
-    clearTimeout(typingTimer);
-    // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchIngredients, typeInterval);
-  });
 }
 
 /** Fonction pour rechercher dans le filtre appareis via input **/
