@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: "DM Sans", sans-serif;
     margin: 0;
@@ -944,6 +945,9 @@ img {
     --fs-12: 12px;
     --br-5: 5px;
 }
+=======
+
+>>>>>>> f347ea5 (fix-desgin2)
 
 * {
     margin: 0 auto;
@@ -1010,8 +1014,8 @@ body {
 .search__input {
     background: var(--light-grey);
     border: none;
-    border-radius: var(--br-5);
-
+    border-radius: 11px;
+    background-color:#FFFFFF;
     padding: 1.5rem;
     width: 100%;
     margin-top: 1.5rem;
@@ -1083,26 +1087,34 @@ body {
 }
 
 #tags__selected .tag__ingredients--wrapper .tag__ingredient {
-    background-color: var(--primary);
-    height: auto;
-    width: 150px;
-    color: #FFF;
-    margin-top: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    border-radius: var(--br-5);
-
-    display: flex;
-    align-items: center;
+    background-color: var(--success);
+        height: auto;
+        width: 150px;
+        color: #1B1B1B;
+        margin-top: 10px;
+        bottom: -26px;
+        margin-left: 0px;
+        z-index: 3;
+        position: absolute;
+        background: #FFD15B;
+        padding: 10px;
+        border-radius: var(--br-5);
+    
+        display: flex;
+        align-items: center;
 }
 
 #tags__selected .tag__appliances--wrapper .tag__appliance {
     background-color: var(--success);
     height: auto;
     width: 150px;
-    color: #FFF;
+    color: #1B1B1B;
     margin-top: 10px;
+    bottom:-26px;
     margin-left: 0px;
+    z-index:3;
+    position:absolute;
+    background: #FFD15B;
     padding: 10px;
     border-radius: var(--br-5);
 
@@ -1111,17 +1123,21 @@ body {
 }
 
 #tags__selected .tag__ustensils--wrapper .tag__ustensil {
-    background-color: var(--danger);
-    height: auto;
-    width: 150px;
-    color: #FFF;
-    margin-top: 10px;
-    margin-left: 0px;
-    padding: 10px;
-    border-radius: var(--br-5);
-
-    display: flex;
-    align-items: center;
+    background-color: var(--success);
+        height: auto;
+        width: 150px;
+        color: #1B1B1B;
+        margin-top: 10px;
+        bottom: -26px;
+        margin-left: 0px;
+        z-index: 3;
+        position: absolute;
+        background: #FFD15B;
+        padding: 10px;
+        border-radius: var(--br-5);
+    
+        display: flex;
+        align-items: center;
 }
 
 
@@ -1133,24 +1149,41 @@ body {
     flex-wrap: wrap;
     flex-grow: 4;
     gap: 2rem;
-
+    bottom:48px;
     position: relative;
 }
 
 
-.filter__ingredients,
+
 .filter__appliances,
 .filter__ustensils {
-    background-color: rgb(255, 255, 255);
-        width: 190px;
-        left: 23px;
-        display: flex;
-        margin-left: 2px;
-        margin-right: 23px;
-        position: relative;
-        align-items: center;
+
+
         border-radius: 11px;
-        padding: 12px;
+            background-color:#FFFFFF;
+            width: 195px;
+            height:56px;
+            padding: 12px;
+            left: 23px;
+            display: flex;
+            margin-left: 2px;
+            margin-right: 23px;
+            position: relative;
+            align-items: center;
+}
+
+.filter__ingredients{
+border-radius: 11px;
+    background-color: #FFFFFF;
+    width: 195px;
+    height: 56px;
+    padding: 12px;
+    left: 23px;
+    display: flex;
+    margin-left: 2px;
+    margin-right: 23px;
+    position: relative;
+    align-items: center;
 }
 
 
@@ -1192,7 +1225,7 @@ header h2 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
-    color: #FFF;
+    color: #1B1B1B;
 
     width: 170px;
     height: 70px;
@@ -1212,7 +1245,7 @@ header h2 {
 
     font-size: 1rem;
 
-    color: #FFF;
+    color: #1B1B1B;
     background-color: var(--primary);
 
     border: none;
@@ -1232,10 +1265,12 @@ header h2 {
 .filter__ingredients--name {
     font-size: 1rem;
     font-weight: normal;
+    color:black;
+   
 }
 
 .filter__ingredients--view {
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
 
     color: #FFF;
@@ -1247,13 +1282,18 @@ header h2 {
     border-top-right-radius: var(--br-5);
 
 
-    overflow: hidden;
+    overflow: hidden; */
+    display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        padding-left: 1px;
+        font-size: 16px;
 }
 
 .filter__ingredients--view header h2 {
     font-weight: normal;
     font-size: var(--fs-18);
-    margin-right: 0;
+    margin-right: 40px;
 }
 
 .filter__ingredients--view header .fa-angle-up {
@@ -1262,45 +1302,44 @@ header h2 {
 
 .filter__ingredients--view input {
     position: absolute;
-    outline: none;
-
-    width: 650px;
-    height: 70px;
-
-    font-size: 1rem;
-
-    color: #FFF;
-    background-color: var(--primary);
-
-    border: none;
-    border-top-left-radius: var(--br-5);
-    border-top-right-radius: var(--br-5);
-    margin-left: 1rem;
+    z-index: 2;
+  right:14px;
+  top:62px;
+    box-sizing: border-box;
+        background-image: url('searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+      
+        border: 1px solid #C6C6C6;
+        border-radius: 2px 2px 2px 2px;
+        border-bottom: 1px solid #ddd;
+        color: black;
 }
 
 .filter__ingredients--angleUp {
-    color: #FFF;
+    color: black;
     position: absolute;
-    left: 625px;
-    top: 34px;
+    left:151px;
+    top: 29px;
 
     z-index: 100;
     cursor: pointer;
 }
 
 .filter__ingredients--list {
-    background-color: var(--primary);
+    background-color: #FFFFFF;
     overflow: scroll;
-
+    z-index:2;
     position: absolute;
-    width: 666px;
+    width: 172px;
+    top:94px;
     height: auto;
     max-height: 275px;
-
-    flex-wrap: wrap;
-
-    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
     padding: 0;
+    right:15px;
 
     border-bottom-left-radius: var(--br-5);
     border-bottom-right-radius: var(--br-5);
@@ -1311,7 +1350,7 @@ header h2 {
     padding: 0.5rem;
     cursor: pointer;
     list-style: none;
-
+    color:black;
     font-size: var(--fs-18);
     font-weight: normal;
 }
@@ -1346,7 +1385,7 @@ header h2 {
 .filter__appliances--close {
     align-items: center;
     background-color: var(--success);
-    color: #FFF;
+    color: #1B1B1B;
 
     width: 170px;
     height: 70px;
@@ -1367,6 +1406,7 @@ header h2 {
 .filter__appliances--name {
     font-size: 1rem;
     font-weight: normal;
+    color: black;
 }
 
 .filter__appliances--view {
@@ -1403,7 +1443,7 @@ header h2 {
 
     font-size: 1rem;
 
-    color: #FFF;
+    color: #1B1B1B;
     background-color: var(--success);
 
     border: none;
@@ -1424,9 +1464,9 @@ header h2 {
 }
 
 .filter__appliances--list {
-    background-color: var(--success);
+    background-color: #FFFFFF;
     overflow: scroll;
-
+    z-index:2;
     position: absolute;
     width: 666px;
     height: auto;
@@ -1446,7 +1486,7 @@ header h2 {
     padding: 0.5rem;
     cursor: pointer;
     list-style: none;
-
+    color:#1B1B1B;
     font-size: var(--fs-18);
     font-weight: normal;
 }
@@ -1483,7 +1523,7 @@ header h2 {
 .filter__ustensils--close {
     align-items: center;
     background-color: var(--danger);
-    color: #FFF;
+    color: #1B1B1B;
 
     width: 170px;
     height: 70px;
@@ -1504,6 +1544,7 @@ header h2 {
 .filter__ustensils--name {
     font-size: 1rem;
     font-weight: normal;
+    color:black;
 }
 
 .filter__ustensils--view {
@@ -1561,21 +1602,21 @@ header h2 {
 }
 
 .filter__ustensils--list {
-    background-color: var(--danger);
-    overflow: scroll;
-
-    position: absolute;
-    width: 666px;
-    height: auto;
-    max-height: 275px;
-
-    flex-wrap: wrap;
-
-    margin-top: 70px;
-    padding: 0;
-
-    border-bottom-left-radius: var(--br-5);
-    border-bottom-right-radius: var(--br-5);
+    background-color: #FFFFFF;
+        overflow: scroll;
+        z-index: 2;
+        position: absolute;
+        width: 666px;
+        height: auto;
+        max-height: 275px;
+    
+        flex-wrap: wrap;
+    
+        margin-top: 70px;
+        padding: 0;
+    
+        border-bottom-left-radius: var(--br-5);
+        border-bottom-right-radius: var(--br-5);
 }
 
 .filter__ustensils--list li {
@@ -1583,7 +1624,7 @@ header h2 {
     padding: 0.5rem;
     cursor: pointer;
     list-style: none;
-
+    color:#1B1B1B;
     font-size: var(--fs-18);
     font-weight: normal;
 }

@@ -29,6 +29,10 @@ function filterIngredients() {
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__ingredients--angleUp";
 
+  const titleUnfold = document.createElement("h2");
+  titleUnfold.textContent = "Ingredients";
+  titleUnfold.className = "filter__ingredients--nameUnfold ";
+
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
   arrowUp.style.cursor = "pointer";
@@ -51,12 +55,16 @@ function filterIngredients() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__ingredients--close");
       article.classList.add("filter__ingredients--view");
-      headerIngredients.style.display = "none";
+      headerIngredients.style.display = "flex";
       inputIngredients.style.display = "flex";
+      titleUnfold.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
+      title.style.marginTop = "11px";
       template.style.width = "650px";
+
       ingredientsListBox.style.display = "flex";
+
       inputIngredients.focus();
 
       /* défini dans filters_input */
@@ -77,7 +85,9 @@ function filterIngredients() {
       inputIngredients.style.display = "none";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
+      title.style.marginTop = "0px";
       template.style.width = "170px";
+
       ingredientsListBox.style.display = "none";
     }
   });
