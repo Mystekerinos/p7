@@ -1092,8 +1092,8 @@ body {
         width: 150px;
         color: #1B1B1B;
         margin-top: 10px;
-        bottom: -26px;
-        margin-left: 0px;
+        bottom: 206px;
+        margin-left: 10px;
         z-index: 3;
         position: absolute;
         background: #FFD15B;
@@ -1110,8 +1110,8 @@ body {
     width: 150px;
     color: #1B1B1B;
     margin-top: 10px;
-    bottom:-26px;
-    margin-left: 0px;
+    bottom:205px;
+    margin-left: 73px;
     z-index:3;
     position:absolute;
     background: #FFD15B;
@@ -1155,7 +1155,19 @@ body {
 
 
 
-.filter__appliances,
+.filter__appliances{
+    border-radius: 11px;
+        background-color: #FFFFFF;
+        width: 195px;
+        height: 56px;
+    
+        left: 23px;
+        display: flex;
+        margin-left: 2px;
+        margin-right: 23px;
+        position: relative;
+        align-items: center;
+}
 .filter__ustensils {
 
 
@@ -1163,7 +1175,6 @@ body {
             background-color:#FFFFFF;
             width: 195px;
             height:56px;
-            padding: 12px;
             left: 23px;
             display: flex;
             margin-left: 2px;
@@ -1177,7 +1188,7 @@ border-radius: 11px;
     background-color: #FFFFFF;
     width: 195px;
     height: 56px;
-    padding: 12px;
+   
     left: 23px;
     display: flex;
     margin-left: 2px;
@@ -1202,7 +1213,7 @@ border-radius: 11px;
 
 header h2 {
     
-    padding-right: 23px;
+   
     position: relative;
 
     color: #FFFFFF;
@@ -1228,7 +1239,7 @@ header h2 {
     color: #1B1B1B;
 
     width: 170px;
-    height: 70px;
+   
 
     border-radius: var(--br-5);
 
@@ -1270,19 +1281,14 @@ header h2 {
 }
 
 .filter__ingredients--view {
-    /* flex-direction: column;
-    align-items: center;
-
-    color: #FFF;
-    background-color: var(--primary);
-
-    font-weight: bold;
-    height: 70px;
-    border-top-left-radius: var(--br-5);
-    border-top-right-radius: var(--br-5);
+   
 
 
-    overflow: hidden; */
+    overflow: hidden; 
+    top:-162px;
+    color:black;
+    z-index:100;
+  
     display: flex;
         margin-bottom: 10px;
         align-items: center;
@@ -1293,7 +1299,7 @@ header h2 {
 .filter__ingredients--view header h2 {
     font-weight: normal;
     font-size: var(--fs-18);
-    margin-right: 40px;
+    
 }
 
 .filter__ingredients--view header .fa-angle-up {
@@ -1346,12 +1352,12 @@ header h2 {
 }
 
 .filter__ingredients--list li {
-    width: 30%;
+ 
     padding: 0.5rem;
     cursor: pointer;
     list-style: none;
     color:black;
-    font-size: var(--fs-18);
+    font-size: 15px;
     font-weight: normal;
 }
 
@@ -1435,26 +1441,26 @@ header h2 {
 }
 
 .filter__appliances--view input {
-    position: absolute;
-    outline: none;
 
-    width: 650px;
-    height: 70px;
+        position: absolute;
+        z-index: 2;
+        right: 14px;
+        top: 47px;
+        box-sizing: border-box;
+        background-image: url('searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
 
-    font-size: 1rem;
-
-    color: #1B1B1B;
-    background-color: var(--success);
-
-    border: none;
-    border-top-left-radius: var(--br-5);
-    border-top-right-radius: var(--br-5);
-
-    margin-left: 1rem;
+        border: 1px solid #C6C6C6;
+        border-radius: 2px 2px 2px 2px;
+        border-bottom: 1px solid #ddd;
+        color: black;
+ 
 }
 
 .filter__appliances--angleUp {
-    color: #FFF;
+    color: #1B1B1B;
     position: absolute;
     left: 825px;
     top: 34px;
@@ -1548,23 +1554,26 @@ header h2 {
 }
 
 .filter__ustensils--view {
-    flex-direction: column;
-    align-items: center;
-
-    color: #FFF;
-    background-color: var(--danger);
-
-    font-weight: bold;
-    height: 70px;
-    border-top-left-radius: var(--br-5);
-    border-top-right-radius: var(--br-5);
-
-    overflow: hidden;
+    position: absolute;
+        z-index: 2;
+        right: 14px;
+        top: 47px;
+        box-sizing: border-box;
+        background-image: url('searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+    
+        border: 1px solid #C6C6C6;
+        border-radius: 2px 2px 2px 2px;
+        border-bottom: 1px solid #ddd;
+        color: black;
 }
 
 .filter__ustensils--view header h2 {
     font-weight: normal;
     font-size: var(--fs-18);
+    bottom:57px;
     margin-right: 0;
 }
 
@@ -1573,26 +1582,24 @@ header h2 {
 }
 
 .filter__ustensils--view input {
-    position: absolute;
-    outline: none;
+position: absolute;
+    z-index: 2;
+    right: 14px;
+    top: 47px;
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
 
-    width: 650px;
-    height: 70px;
-
-    font-size: 1rem;
-
-    color: #FFF;
-    background-color: var(--danger);
-
-    border: none;
-    border-top-left-radius: var(--br-5);
-    border-top-right-radius: var(--br-5);
-
-    margin-left: 1rem;
+    border: 1px solid #C6C6C6;
+    border-radius: 2px 2px 2px 2px;
+    border-bottom: 1px solid #ddd;
+    color: black;
 }
 
 .filter__ustensils--angleUp {
-    color: #FFF;
+    color: #1B1B1B;
     position: absolute;
     left: 1025px;
     top: 34px;

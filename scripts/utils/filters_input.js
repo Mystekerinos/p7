@@ -55,9 +55,9 @@ function inputAppliance() {
   searchInputAppliance.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
-    clearTimeout(typingTimer);
+
     // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchAppliances, typeInterval);
+    getSearchAppliances();
   });
 }
 
@@ -89,7 +89,7 @@ function inputUstensil() {
     // eslint-disable-next-line no-undef
     clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchUstensils, typeInterval);
+    getSearchUstensils();
   });
 }
 /*** Rechercher dans les inputs des filtres ***/
@@ -142,9 +142,8 @@ function inputAppliance() {
   searchInputAppliance.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
-    clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchAppliances, typeInterval);
+    getSearchAppliances();
   });
 }
 
@@ -172,8 +171,7 @@ function inputUstensil() {
   searchInputUstensil.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
-    clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
-    typingTimer = setTimeout(getSearchUstensils, typeInterval);
+    getSearchUstensils();
   });
 }
