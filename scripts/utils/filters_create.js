@@ -180,11 +180,14 @@ function filterAppliances() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__appliances--close");
       article.classList.add("filter__appliances--view");
-      headerAppliances.style.display = "none";
+      headerAppliances.style.display = "flex";
       inputAppliances.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "37px";
+      hiddenAngle.style.top = "29px";
+      title.style.display.position = "absolute";
+      title.style.display.left = "-13px";
+      title.style.display.top = "-5px";
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
