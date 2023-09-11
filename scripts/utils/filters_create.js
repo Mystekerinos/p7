@@ -344,15 +344,15 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--close");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "none";
+      titleUnfoldUstensils.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
+      template.style.width = "170px";
       title.style.bottom = "6px";
       title.style.right = "7px";
-      template.style.width = "170px";
-
-      hiddenAngle.style.top = "-22px";
-      hiddenAngle.style.left = "126px";
+      hiddenAngle.style.top = "39px";
+      hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";

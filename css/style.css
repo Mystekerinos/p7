@@ -1480,7 +1480,7 @@ header h2 {
 
     flex-wrap: wrap;
 
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 0;
 
     border-bottom-left-radius: var(--br-5);
@@ -1540,7 +1540,7 @@ header h2 {
 }
 
 .filter__ustensils--header {
-    display: flex;
+display: flex;
 
     width: 170px;
     height: 70px;
@@ -1619,7 +1619,7 @@ position: absolute;
     
         flex-wrap: wrap;
     
-        margin-top: 70px;
+        margin-top: 20px;
         padding: 0;
     
         border-bottom-left-radius: var(--br-5);
