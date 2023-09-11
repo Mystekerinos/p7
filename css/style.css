@@ -1616,12 +1616,10 @@ position: absolute;
         width: 666px;
         height: auto;
         max-height: 275px;
-    
         flex-wrap: wrap;
-    
-        margin-top: 20px;
         padding: 0;
-    
+        left:-3px;
+        top:21px;
         border-bottom-left-radius: var(--br-5);
         border-bottom-right-radius: var(--br-5);
 }
