@@ -15,14 +15,19 @@ body {
 /*** MAIN ***/
 
 .main {
-    width: 1240px;
+    width: 100%;
     margin: auto;
 }
 
 
 /*** header section ***/
 
-
+.recipesLogo{
+    position:relative;
+    left:1087px;
+    bottom:91px;
+    width:11%;
+}
 .header {
     
     justify-content: center;
@@ -143,7 +148,8 @@ body {
         width: 150px;
         color: #1B1B1B;
         margin-top: 10px;
-        bottom: 206px;
+        bottom: -12px;
+        left:219px;
         margin-left: 10px;
         z-index: 3;
         position: absolute;
@@ -159,9 +165,10 @@ body {
     background-color: var(--success);
     height: auto;
     width: 150px;
+    left:415px;
     color: #1B1B1B;
     margin-top: 10px;
-    bottom:205px;
+    bottom:-13px;
     margin-left: 73px;
     z-index:3;
     position:absolute;
@@ -179,7 +186,8 @@ body {
         width: 150px;
         color: #1B1B1B;
         margin-top: 10px;
-        bottom: -26px;
+        left:723px;
+        bottom: -14px;
         margin-left: 0px;
         z-index: 3;
         position: absolute;
