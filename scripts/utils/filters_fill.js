@@ -16,27 +16,24 @@ function fillFilters(recipes) {
   appliancesBloc.innerHTML = "";
   ustensilsBloc.innerHTML = "";
 
-  recipes.forEach((recipe) => {
-    /** Ingredients **/
-    // if tags already used, don't push it.
+  for (const recipe of recipes) {
+    /** Ingredients (boucle native : destructuré) **/
     const itags = [...document.querySelectorAll(".tag__ingredient")].map(
       (itag) => itag.innerText
     );
-    recipe.ingredients.forEach(({ ingredient }) => {
+    for (const { ingredient } of recipe.ingredients) {
       if (
         ingredientsList.includes(ingredient) === false &&
         itags.includes(ingredient) === false
       ) {
-        ingredientsList.push(ingredient);
+        ingredientsList.push(`${ingredient}`);
         const filterItem = document.createElement("li");
         filterItem.classList.add("filter__ingredients--items");
-        filterItem.innerText = ingredient;
+        filterItem.innerText = `${ingredient}`;
         ingredientsBloc.appendChild(filterItem);
       }
-    });
-
+    }
     /** appliances **/
-    // if tags already used, don't push it.
     const atags = [...document.querySelectorAll(".tag__appliance")].map(
       (atag) => atag.innerText
     );
@@ -50,13 +47,12 @@ function fillFilters(recipes) {
       filterItem.innerText = recipe.appliance;
       appliancesBloc.appendChild(filterItem);
     }
-
-    /** ustensils **/
-    // if tags already used, don't push it.
+    /** ustensils (boucle native) **/
     const utags = [...document.querySelectorAll(".tag__ustensil")].map(
       (utag) => utag.innerText
     );
-    recipe.ustensils.forEach((ustensil) => {
+    for (let i = 0; i < recipe.ustensils.length; i++) {
+      const ustensil = recipe.ustensils[i];
       if (
         ustensilsList.includes(ustensil) === false &&
         utags.includes(ustensil) === false
@@ -67,8 +63,8 @@ function fillFilters(recipes) {
         filterItem.innerText = ustensil;
         ustensilsBloc.appendChild(filterItem);
       }
-    });
-  });
+    }
+  }
   /* Variable défini dans tags.js */
   // eslint-disable-next-line no-undef
   tagIngredientAlreadyAdded = false;
