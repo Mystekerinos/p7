@@ -98,5 +98,5 @@ searchBarInput.addEventListener("keyup", () => {
 
 function renderRecipes(nbRecipes) {
   let allMeals = document.querySelector(".allMeals");
-  allMeals.innerHTML = nbRecipes;
+  allMeals.innerHTML = `${nbRecipes} recettes`;
 }
