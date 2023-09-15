@@ -751,7 +751,9 @@ font-size: 18px;
 }
 
 
-.duration{
+
+
+#recipes__cards header .duration{
     position: relative;
         bottom: 269px;
     
@@ -763,20 +765,6 @@ font-size: 18px;
         background-color: #FFD15B;
         padding-top: 3px;
         padding-left: 6px;
-}
-
-#recipes__cards header .duration{
- position:relative;
- bottom: 300px;
-
- left:137px;
-
- width:66px;
- border-radius:14px;
- height:26px;
- background-color:  #FFD15B;
-padding-top:3px;
-padding-left: 6px;
 }
 
 .card_description_details{
