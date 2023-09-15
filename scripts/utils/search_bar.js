@@ -25,10 +25,12 @@ function searchLive() {
         recipeIsMatching = true;
       } else if (regex.test(recipes[i].description)) {
         recipeIsMatching = true;
-      }
-      for (let j = 0; j < recipes[i].ingredients.length; j += 1) {
-        if (regex.test(recipes[i].ingredients[j].ingredient)) {
-          recipeIsMatching = true;
+      } else {
+        for (let j = 0; j < recipes[i].ingredients.length; j += 1) {
+          if (regex.test(recipes[i].ingredients[j].ingredient)) {
+            recipeIsMatching = true;
+            break;
+          }
         }
       }
       if (recipeIsMatching === true) {
