@@ -272,10 +272,12 @@ border-radius: 11px;
 
 header h2 {
     
-   
+font-size: 18px;
+    font-weight: bold;
+    margin: 23px;
     position: relative;
 
-    color: #FFFFFF;
+    color: #1B1B1B;
 }
 
 /* Filter__ingredient */
@@ -755,7 +757,7 @@ font-size: 18px;
 
 #recipes__cards header .duration{
     position: relative;
-        bottom: 269px;
+        bottom: 308px;
     
         left: 137px;
     
@@ -785,9 +787,7 @@ display: flex;
        
 }
 
-#recipes__cards header .duration-icon {
-    
-}
+
 
 #recipes__cards .ingredients__detailled--bloc {
     display: flex;
