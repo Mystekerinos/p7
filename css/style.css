@@ -280,6 +280,17 @@ font-size: 18px;
     color: #1B1B1B;
 }
 
+.allMeals {
+    font-family: 'Anton';
+    position: absolute;
+    z-index: 3;
+    bottom: 270px;
+    right: 334px;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+
 /* Filter__ingredient */
 
 .filter__ingredients--template {

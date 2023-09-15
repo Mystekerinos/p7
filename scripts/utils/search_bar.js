@@ -67,7 +67,7 @@ function searchLive() {
       recipesToDisplay = filteredRecipesWithTags(recipes);
     }
   }
-
+  renderRecipes(recipesToDisplay.length);
   /** Message erreur dans le cas d'une mauvaise recherche **/
   if (recipesToDisplay.length > 0) {
     noResultText.innerHTML = "";
@@ -97,3 +97,8 @@ searchBarInput.addEventListener("keyup", () => {
   clearTimeout(typingTimer);
   typingTimer = setTimeout(searchLive(), typeInterval);
 });
+
+function renderRecipes(nbRecipes) {
+  let allMeals = document.querySelector(".allMeals");
+  allMeals.innerHTML = `${nbRecipes} recettes`;
+}
