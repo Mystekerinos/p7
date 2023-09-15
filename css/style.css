@@ -440,7 +440,7 @@ font-size: 18px;
 
 .filter__appliances--template {
     margin-left: 0;
-    width: 170px;
+    width: 194px;
     float: left;
     overflow: hidden;
 }
@@ -504,7 +504,7 @@ font-size: 18px;
 .filter__appliances--view input {
 
         position: absolute;
-        z-index: 2;
+        z-index: 4;
         right: 14px;
         top: 53px;
         box-sizing: border-box;
@@ -532,24 +532,26 @@ font-size: 18px;
 
 .filter__appliances--list {
     background-color: #FFFFFF;
-    overflow: scroll;
-    z-index:2;
-    position: absolute;
-    width: 666px;
-    height: auto;
-    max-height: 275px;
+        overflow: scroll;
+        z-index: 2;
+        position: absolute;
+        width: 172px;
+        top: 94px;
+        height: auto;
+        max-height: 275px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        right: 15px;
+    
+        border-bottom-left-radius: var(--br-5);
+        border-bottom-right-radius: var(--br-5);
+    
 
-    flex-wrap: wrap;
-
-    margin-top: 20px;
-    padding: 0;
-
-    border-bottom-left-radius: var(--br-5);
-    border-bottom-right-radius: var(--br-5);
 }
 
 .filter__appliances--list li {
-    width: 30%;
+ 
     padding: 0.5rem;
     cursor: pointer;
     list-style: none;
@@ -670,19 +672,21 @@ position: absolute;
 }
 
 .filter__ustensils--list {
-    background-color: #FFFFFF;
-        overflow: scroll;
-        z-index: 2;
-        position: absolute;
-        width: 666px;
-        height: auto;
-        max-height: 275px;
-        flex-wrap: wrap;
-        padding: 0;
-        left:-3px;
-        top:21px;
-        border-bottom-left-radius: var(--br-5);
-        border-bottom-right-radius: var(--br-5);
+  background-color: #FFFFFF;
+    overflow: scroll;
+    z-index:2;
+    position: absolute;
+    width: 172px;
+    top:94px;
+    height: auto;
+    max-height: 275px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    right:15px;
+
+    border-bottom-left-radius: var(--br-5);
+    border-bottom-right-radius: var(--br-5);
 }
 
 .filter__ustensils--list li {
