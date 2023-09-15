@@ -29,6 +29,10 @@ function filterIngredients() {
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__ingredients--angleUp";
 
+  const titleUnfold = document.createElement("h2");
+  titleUnfold.textContent = "Appareils";
+  titleUnfold.className = "filter__appliances--nameUnfold ";
+
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
   arrowUp.style.cursor = "pointer";
@@ -51,11 +55,22 @@ function filterIngredients() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__ingredients--close");
       article.classList.add("filter__ingredients--view");
-      headerIngredients.style.display = "none";
+      headerIngredients.style.display = "flex";
       inputIngredients.style.display = "flex";
+      titleUnfold.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      template.style.width = "650px";
+      hiddenAngle.style.top = "37px";
+      hiddenAngle.style.left = "143px";
+      hiddenAngle.style.position = "absolute";
+      template.style.width = "194px";
+      template.style.borderRadius = "11px";
+      template.style.position = "absolute";
+      template.style.zIndex = "3";
+      template.style.backgroundColor = "#FFFFFF";
+      template.style.right = "0px";
+      template.style.top = "0px";
+      template.style.height = "223px";
       ingredientsListBox.style.display = "flex";
       inputIngredients.focus();
 
@@ -77,7 +92,19 @@ function filterIngredients() {
       inputIngredients.style.display = "none";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
+      title.style.marginTop = "0px";
       template.style.width = "170px";
+      title.style.bottom = "6px";
+      title.style.right = "7px";
+      hiddenAngle.style.top = "39px";
+      hiddenAngle.style.left = "15px";
+      hiddenAngle.style.position = "absolute";
+      template.style.position = "none";
+      template.style.zIndex = "none";
+      template.style.backgroundColor = "FFFFFF";
+      template.style.right = "none";
+      template.style.borderRadius = "11px";
+      template.style.height = "47px";
       ingredientsListBox.style.display = "none";
     }
   });
@@ -122,6 +149,10 @@ function filterAppliances() {
   arrowDown.className = "fa-solid fa-angle-down fa-lg";
   arrowDown.style.cursor = "pointer";
 
+  const titleUnfoldAppliances = document.createElement("h2");
+  titleUnfoldAppliances.textContent = "Appareils";
+  titleUnfoldAppliances.className = "filter__appliances--nameUnfold ";
+
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__appliances--angleUp";
 
@@ -146,11 +177,24 @@ function filterAppliances() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__appliances--close");
       article.classList.add("filter__appliances--view");
-      headerAppliances.style.display = "none";
+      headerAppliances.style.display = "flex";
       inputAppliances.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      template.style.width = "650px";
+      hiddenAngle.style.top = "29px";
+      title.style.display.position = "absolute";
+      title.style.display.left = "-13px";
+      title.style.display.top = "-5px";
+      hiddenAngle.style.left = "143px";
+      hiddenAngle.style.position = "absolute";
+      template.style.width = "194px";
+      template.style.borderRadius = "11px";
+      template.style.position = "absolute";
+      template.style.zIndex = "3";
+      template.style.backgroundColor = "#FFFFFF";
+      template.style.right = "0px";
+      template.style.top = "0px";
+      template.style.height = "223px";
       appliancesListBox.style.display = "flex";
       inputAppliances.focus();
 
@@ -170,9 +214,22 @@ function filterAppliances() {
       article.classList.add("filter__appliances--close");
       headerAppliances.style.display = "flex";
       inputAppliances.style.display = "none";
+      titleUnfoldAppliances.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
+      title.style.marginTop = "0px";
       template.style.width = "170px";
+      title.style.bottom = "6px";
+      title.style.right = "7px";
+      hiddenAngle.style.top = "39px";
+      hiddenAngle.style.left = "15px";
+      hiddenAngle.style.position = "absolute";
+      template.style.position = "none";
+      template.style.zIndex = "none";
+      template.style.backgroundColor = "FFFFFF";
+      template.style.right = "none";
+      template.style.borderRadius = "11px";
+      template.style.height = "47px";
       appliancesListBox.style.display = "none";
     }
   });
@@ -217,6 +274,10 @@ function filterUstensils() {
   arrowDown.className = "fa-solid fa-angle-down fa-lg";
   arrowDown.style.cursor = "pointer";
 
+  const titleUnfoldUstensils = document.createElement("h2");
+  titleUnfoldUstensils.textContent = "Ustensils";
+  titleUnfoldUstensils.className = "filter__ustensils--nameUnfold ";
+
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__ustensils--angleUp";
 
@@ -241,11 +302,26 @@ function filterUstensils() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__ustensils--close");
       article.classList.add("filter__ustensils--view");
-      headerUstensils.style.display = "none";
+      headerUstensils.style.display = "flex";
       inputUstensils.style.display = "flex";
+      titleUnfoldUstensils.style.display = "flex";
+      inputUstensils.style.top = "-3px";
+      inputUstensils.style.right = "-2px";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      template.style.width = "650px";
+      hiddenAngle.style.top = "-21px";
+      hiddenAngle.style.left = "124px";
+      title.style.bottom = "58px";
+      title.style.left = "-23px";
+      hiddenAngle.style.position = "absolute";
+      template.style.width = "194px";
+      template.style.borderRadius = "11px";
+      template.style.position = "absolute";
+      template.style.zIndex = "3";
+      template.style.backgroundColor = "#FFFFFF";
+      template.style.right = "0px";
+      template.style.top = "1px";
+      template.style.height = "223px";
       ustensilsListBox.style.display = "flex";
       inputUstensils.focus();
 
@@ -265,9 +341,22 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--close");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "none";
+      titleUnfoldUstensils.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
+      title.style.marginTop = "0px";
       template.style.width = "170px";
+      title.style.bottom = "6px";
+      title.style.right = "7px";
+      hiddenAngle.style.top = "39px";
+      hiddenAngle.style.left = "15px";
+      hiddenAngle.style.position = "absolute";
+      template.style.position = "none";
+      template.style.zIndex = "none";
+      template.style.backgroundColor = "FFFFFF";
+      template.style.right = "none";
+      template.style.borderRadius = "11px";
+      template.style.height = "47px";
       ustensilsListBox.style.display = "none";
     }
   });
