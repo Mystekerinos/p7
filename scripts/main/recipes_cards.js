@@ -62,11 +62,6 @@ function getRecipeCard(data) {
   descriptionIsNumberIngredient.classList.add("card_description_word");
   descriptionIsNumberIngredient.textContent = ingredientWord;
 
-  const descriptionAllIngredient = document.createElement("div");
-  descriptionAllIngredient.classList.add("card_description_allIngredient");
-  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
-  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
-
   const recipe = "RECETTE";
 
   const descriptionRecipe = document.createElement("div");
@@ -102,8 +97,7 @@ function getRecipeCard(data) {
   const hidden = document.createElement("div");
   hidden.classList.add("is-hidden");
 
-  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
-  descriptionAllIngredient.appendChild(cardInfo);
+  descriptionDetailsIngredient.appendChild(cardInfo);
 
   /* Append section */
   article.appendChild(isImage);
@@ -114,8 +108,8 @@ function getRecipeCard(data) {
   article.appendChild(recipeDescription);
 
   article.appendChild(descriptionIsNumberIngredient);
-  article.appendChild(descriptionAllIngredient);
-
+  article.appendChild(descriptionDetailsIngredient);
+  article.appendChild(descriptionDetailsIngredient);
   cardHeader.appendChild(recipeDuration);
 
   cardInfo.appendChild(recipeIngredients);

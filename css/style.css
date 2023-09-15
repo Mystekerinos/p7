@@ -741,8 +741,13 @@ position: absolute;
 
 
 .card_description_ingredient{
+    margin:0px;
    display:flex;
    flex-direction: column;
+   padding-bottom:10px;
+   font-size: 14px;
+   align-items: baseline;
+   width: 50%;
 }
 
 .card_description_allIngredient{
