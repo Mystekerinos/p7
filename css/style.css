@@ -728,8 +728,31 @@ position: absolute;
         background-color: #FFFFFF;
 }
 
-#recipes__cards header {
-    
+.card_description_itemIngredient {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 14px;
+    align-items: baseline;
+    width: 50%;
+
+}
+
+
+.card_description_ingredient{
+   display:flex;
+   flex-direction: column;
+}
+
+.card_description_allIngredient{
+    margin:0px;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size:14px;
+    align-items: baseline;
+    width:50%;
 }
 
 .card_description_img {
@@ -741,9 +764,7 @@ position: absolute;
     border-radius: 21px 21px 0px 0px;
 }
 
-#recipes__cards .informations {
-  
-}
+
 
 #recipes__cards .card_name {
 font-size: 18px;

@@ -9,6 +9,7 @@ function getIngredients(ingredients) {
 
   for (const ingredient of ingredients) {
     ingredientName = document.createElement("p");
+    ingredientName.classList.add("card_description_ingredient");
     ingredientName.setAttribute("data-ingredient", ingredient.ingredient);
     if (ingredient.unit === "" || ingredient.unit == null) {
       if (ingredient.quantity) {
@@ -94,11 +95,14 @@ function getRecipeCard(data) {
   const recipeIngredients = getIngredients(ingredients);
 
   const recipeDescription = document.createElement("p");
+
   recipeDescription.textContent = description;
   recipeDescription.className = "description";
 
   const hidden = document.createElement("div");
   hidden.classList.add("is-hidden");
+
+  descriptionAllIngredient.appendChild(cardInfo);
 
   /* Append section */
   article.appendChild(isImage);
@@ -112,7 +116,7 @@ function getRecipeCard(data) {
   article.appendChild(descriptionAllIngredient);
 
   cardHeader.appendChild(recipeDuration);
-  article.appendChild(cardInfo);
+
   cardInfo.appendChild(recipeIngredients);
 
   article.appendChild(hidden);
