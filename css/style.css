@@ -750,6 +750,21 @@ font-size: 18px;
     color:black;
 }
 
+
+.duration{
+    position: relative;
+        bottom: 269px;
+    
+        left: 137px;
+    
+        width: 72px;
+        border-radius: 14px;
+        height: 29px;
+        background-color: #FFD15B;
+        padding-top: 3px;
+        padding-left: 6px;
+}
+
 #recipes__cards header .duration{
  position:relative;
  bottom: 300px;
