@@ -39,24 +39,47 @@ function getRecipeCard(data) {
     ustensils,
   } = data;
 
+  const Image = `assets/Recettes/${id}.jpg`;
+  console.log("Image", Image);
+
   const article = document.createElement("article");
   article.setAttribute("id", id);
   article.setAttribute("servings", servings);
 
-  const blankImage = document.createElement("div");
-  blankImage.classList.add("blank-space");
+  const isImage = document.createElement("img");
+  isImage.classList.add("card_description_img");
+  isImage.setAttribute("src", Image);
+
+  const descriptionDetailsIngredient = document.createElement("div");
+  descriptionDetailsIngredient.classList.add("card_description_details");
+
+  const ingredientWord = "INGREDIENT";
+  const isNumberIngredient = document.createElement("div");
+  isNumberIngredient.classList.add("card_description");
+
+  const descriptionIsNumberIngredient = document.createElement("div");
+  descriptionIsNumberIngredient.classList.add("card_description_word");
+  descriptionIsNumberIngredient.textContent = ingredientWord;
+
+  const descriptionAllIngredient = document.createElement("div");
+  descriptionAllIngredient.classList.add("card_description_allIngredient");
+  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
+  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
+
+  const recipe = "RECETTE";
+
+  const descriptionRecipe = document.createElement("div");
+  descriptionRecipe.classList.add("card_description");
+  const descriptionRecipeWord = document.createElement("div");
+  descriptionRecipeWord.classList.add("card_description_word");
+  descriptionRecipeWord.textContent = recipe;
+  descriptionRecipe.appendChild(descriptionRecipeWord);
 
   const cardHeader = document.createElement("header");
 
   const recipeName = document.createElement("h2");
   recipeName.textContent = name;
   recipeName.className = "nom";
-
-  const spanIcon = document.createElement("span");
-  spanIcon.className = "duration-icon";
-
-  const timeIcon = document.createElement("i");
-  timeIcon.className = "fa-regular fa-clock fa-lg";
 
   const recipeDuration = document.createElement("h3");
   recipeDuration.textContent = `${time} min`;
@@ -78,15 +101,20 @@ function getRecipeCard(data) {
   hidden.classList.add("is-hidden");
 
   /* Append section */
-  article.appendChild(blankImage);
+  article.appendChild(isImage);
   article.appendChild(cardHeader);
+  article.appendChild(descriptionRecipe);
+
   cardHeader.appendChild(recipeName);
-  cardHeader.appendChild(spanIcon);
-  spanIcon.appendChild(timeIcon);
+  article.appendChild(recipeDescription);
+
+  article.appendChild(descriptionIsNumberIngredient);
+  article.appendChild(descriptionAllIngredient);
+
   cardHeader.appendChild(recipeDuration);
   article.appendChild(cardInfo);
   cardInfo.appendChild(recipeIngredients);
-  cardInfo.appendChild(recipeDescription);
+
   article.appendChild(hidden);
 
   return article;
