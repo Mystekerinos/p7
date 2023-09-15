@@ -102,6 +102,7 @@ function getRecipeCard(data) {
   const hidden = document.createElement("div");
   hidden.classList.add("is-hidden");
 
+  descriptionAllIngredient.appendChild(descriptionDetailsIngredient);
   descriptionAllIngredient.appendChild(cardInfo);
 
   /* Append section */
