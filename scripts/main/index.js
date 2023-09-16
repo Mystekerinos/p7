@@ -15,6 +15,7 @@ function displayData(recipes) {
     const recipeCard = getRecipeCard(recipe);
     recipeSection.appendChild(recipeCard);
   }
+  renderRecipes(recipes.length);
 }
 
 function init() {
