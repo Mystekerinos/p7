@@ -77,7 +77,7 @@ function getRecipeCard(data) {
   recipeName.textContent = name;
   recipeName.className = "nom";
 
-  const recipeDuration = document.createElement("h3");
+  const recipeDuration = document.createElement("div");
   recipeDuration.textContent = `${time} min`;
   recipeDuration.className = "duration";
 
