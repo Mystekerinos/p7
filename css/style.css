@@ -282,9 +282,9 @@ header h2 {
     font-family: 'Anton';
     position: absolute;
     z-index: 3;
-    bottom: 270px;
-    right: 334px;
-    font-size: 21px;
+    bottom: 299px;
+    right: 381px;
+    font-size: 32px;
     font-weight: bolder;
 }
 
@@ -731,12 +731,12 @@ header h2 {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 43px;
-    column-gap: 2px;
+    column-gap: 73px;
 }
 
 #recipes__cards article {
     border: solid transparent;
-    width: 334px;
+    width: 374px;
     position: relative;
     border-radius: 21px;
     background-color: #FFFFFF;
@@ -881,26 +881,26 @@ strong {
     }
 
     .header {
-        width: 203%;
+        width: 225%;
         margin-top: 0px;
     }
 
-    .main {
-        width: 226;
-    }
+
 
     #form {
-        width: 203%;
+        width: 226%;
         margin-left: 0%;
         margin-right: 0%;
     }
 
     .search__input {
         width: 86%;
+        position:relative;
+        left:46px;
     }
 
     .search__button {
-        right: 115px;
+        right: 75px;
     }
 
     .smallMealLogo {
@@ -909,7 +909,7 @@ strong {
     }
 
     h1.title {
-        left: -56px;
+        left: -17px;
         width: 878px;
         font-size: 31px;
     }
@@ -927,8 +927,8 @@ strong {
     }
 
     .allMeals {
-        right: -369px;
-        bottom: 95px;
+        right: -425px;
+        bottom: 92px;
         color: #1B1B1B;
     }
 
@@ -995,11 +995,21 @@ strong {
     }
 
     .allMeals {
-        font-size: 21px;
-        right: 166px;
-        bottom: 9px;
+        font-size: 28px;
+        right: 39px;
+        bottom: 609px;
     }
 
+    .header{
+        margin-top:0px;
+        width:118%;
+    }
+
+    #form{
+        width:117%;
+        margin-left:0%;
+        margin-right:0%;
+    }
 
     #tags__selected .tag__ustensils--wrapper .tag__ustensil {
         bottom: 58px;
