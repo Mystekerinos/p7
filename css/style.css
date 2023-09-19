@@ -913,6 +913,7 @@ display: flex;
 
     .search__input-group {
         left: 40px;
+        left:0px;
     }
 
     .search__button {
@@ -927,9 +928,8 @@ display: flex;
     }
 
     h1.title {
-        display: flex;
-        justify-content: center;
         font-size: 31px;
+        width: 853px;
     }
 
     .smallMealLogo {
@@ -963,6 +963,13 @@ display: flex;
 
 
 }
+
+@media screen and (min-height:700px) and (max-height:1057px) {
+.allMeals{
+    bottom:450px;
+}
+}
+
 
 @media screen and (min-width:376px) and (max-width:699px) {
   .header{
