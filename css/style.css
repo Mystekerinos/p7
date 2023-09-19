@@ -896,24 +896,39 @@ display: flex;
 
     #filters {
         gap: 0px;
+        margin-left: 49px;
+        justify-content: inherit;
     }
 
     .search__input {
-        width: 87%;
+        width: 728px;
+        display: flex;
+        justify-content: center;
 
+    }
+    .header{
+        width:117%;
+        margin-top:0px;
     }
 
     .search__input-group {
-        left: 36px;
+        left: 40px;
     }
 
     .search__button {
-        right: 105px;
+        right: 55px;
 
     }
 
+    #form{
+        width:117%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
     h1.title {
-        left: -38px;
+        display: flex;
+        justify-content: center;
         font-size: 31px;
     }
 
@@ -924,8 +939,8 @@ display: flex;
 
     .allMeals {
         font-size: 21px;
-        right: 166px;
-        bottom: 9px;
+        right: -13px;
+        bottom: 609px;
     }
 
 
