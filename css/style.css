@@ -1336,6 +1336,12 @@ margin-bottom: 40px;
 
 }
 
+@media screen and (max-width:360px) {
+  .allMeals{
+    bottom: -91px;
+  }
+}
+
 
 
 
