@@ -1301,6 +1301,8 @@ margin-bottom: 40px;
     
         #filters {
             margin-bottom: 56px;
+            display: flex;
+                justify-content: center;
         }
     
     
@@ -1336,6 +1338,8 @@ margin-bottom: 40px;
 
     #filters{
         margin-bottom:56px;
+        display: flex;
+        justify-content: center;
     }
 
 
