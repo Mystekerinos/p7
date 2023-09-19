@@ -206,7 +206,7 @@ body {
 #filters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 30px;;
     gap: 2rem;
     bottom:48px;
     position: relative;
@@ -284,7 +284,7 @@ font-size: 18px;
     font-family: 'Anton';
     position: absolute;
     z-index: 3;
-    bottom: 270px;
+    bottom: 290px;
     right: 334px;
     font-size: 21px;
     font-weight: bolder;
@@ -733,7 +733,7 @@ position: absolute;
             justify-content: center;
             flex-wrap: wrap;
             row-gap: 43px;
-            column-gap:2px;
+            column-gap:25px;
 }
 
 #recipes__cards article {
@@ -873,9 +873,31 @@ display: flex;
 }
 
 
+
+@media screen and (min-width:1057px) and (max-width:1281px) {
+    .allMeals {
+            top: 561px;
+            right: 199px;
+            font-size: 30px;
+        }
+
+        #filters{
+            display: flex;
+            justify-content: inherit;
+        }
+
+                .smallMealLogo {
+                    rotate: 360deg;
+                    width: 255px;
+                    position: relative;
+                    right: 35%;
+                    bottom: 23%;
+                }
+}
+
 @media screen and (min-width:912px) and (max-width:1057px) {
 .allMeals {
-    bottom:795px;
+    bottom:22px;
     right:43px;
     font-size: 30px;
 }
@@ -1125,9 +1147,64 @@ h1.title {
 
 }
 
+@media screen and (min-width:514px) and (max-width:701px) {
+  .allMeals{
+    right:211px;
+    bottom:-100px;
+  }
 
 
-@media screen and (min-width:401px) and (max-width:701px) {
+
+   #filters {
+       display: flex;
+       flex-wrap: inherit;
+       align-items: center;
+       flex-direction: column;
+       margin-bottom: 40px;
+
+   }
+
+
+
+
+   .header {
+       margin-top: 0px;
+       width: 100%;
+   }
+
+   .smallMealLogo {
+       right: -5%;
+       width: 225px;
+   }
+
+   h1.title {
+       font-size: 15px;
+       width: 89%;
+       left: 11px;
+   }
+
+   .search__input-group {
+       width: 89%;
+   }
+
+   .search__input {
+       width: 91%;
+   }
+
+   #form {
+       margin-left: 0%;
+       margin-right: 0%;
+   }
+
+
+
+
+   .search__button {
+       right: 35px;
+   }
+}
+
+@media screen and (min-width:401px) and (max-width:513px) {
     #filters{
         display: flex;
         flex-wrap: inherit;
