@@ -950,7 +950,45 @@ display: flex;
 }
 
 @media screen and (min-width:376px) and (max-width:699px) {
+  .header{
+    margin-top:0px;
+    width:100%;
+  }
 
+  .smallMealLogo{
+    right:-5%;
+    width:225px;
+  }
+
+  h1.title{
+    font-size: 15px;
+    width:89%;
+    left:11px;
+  }
+
+  .search__input-group{
+    width:89%;
+  }
+  .search__input{
+    width:91%;
+  }
+
+  #form{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #filters {
+            margin-bottom: 56px;
+        }
+                
+  .allMeals {
+      right: 151px;
+     bottom: 21px;
+                      
+     }
+     .search__button{
+        right:35px;
+     }
 }
 
 @media screen and (max-width:375px) {
