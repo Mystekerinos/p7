@@ -873,144 +873,372 @@ display: flex;
 }
 
 
+@media screen and (min-width:912px) and (max-width:1057px) {
+.allMeals {
+    bottom:795px;
+    right:43px;
+    font-size: 30px;
+}
+
+.filter__ustensils {
+    width: 159px;
+}
+
+.filter__appliances {
+    width: 159px;
+}
+
+.filter__ingredients {
+    width: 159px;
+}
+
+#filters {
+    gap: 0px;
+    margin-left: 49px;
+    justify-content: inherit;
+}
+
+.search__input {
+    width: 728px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header {
+    width: 117%;
+    margin-top: 0px;
+}
+
+.search__input-group {
+    left: 40px;
+    left: 0px;
+}
+
+.search__button {
+    right: 55px;
+
+}
+
+#form {
+    width: 117%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+h1.title {
+    font-size: 31px;
+    width: 853px;
+}
+
+.smallMealLogo {
+    right: 32%;
+    width: 217px;
+}
+
+#tags__selected .tag__ustensils--wrapper .tag__ustensil {
+    bottom: 58px;
+    left: 510px;
+}
+
+#tags__selected .tag__appliances--wrapper .tag__appliance {
+    left: 265px;
+    bottom: 58px;
+}
 
 
+#tags__selected .tag__ingredients--wrapper .tag__ingredient {
+    bottom: 58px;
+    left: 163px;
+}
+}
 
 
-
-
-
-
-@media screen and (min-width:700px) and (max-width:1057px) {
-    .filter__ustensils {
-        width: 159px;
+@media screen and (min-width:820px) and (max-width:911px) {
+    .allMeals{
+        bottom: 607px;
+        right:23px;
     }
 
-    .filter__appliances {
-        width: 159px;
-    }
 
-    .filter__ingredients {
-        width: 159px;
-    }
+          .filter__ustensils {
+              width: 159px;
+          }
+    
+          .filter__appliances {
+              width: 159px;
+          }
+    
+          .filter__ingredients {
+              width: 159px;
+          }
+    
+          #filters {
+              gap: 0px;
+              margin-left: 49px;
+              justify-content: inherit;
+          }
+    
+          .search__input {
+              width: 728px;
+              display: flex;
+              justify-content: center;
+    
+          }
+    
+          .header {
+              width: 117%;
+              margin-top: 0px;
+          }
+    
+          .search__input-group {
+              left: 40px;
+              left: 0px;
+          }
+    
+          .search__button {
+              right: 55px;
+    
+          }
+    
+          #form {
+              width: 117%;
+              margin-left: 0%;
+              margin-right: 0%;
+          }
+    
+          h1.title {
+              font-size: 31px;
+              width: 853px;
+          }
+    
+          .smallMealLogo {
+              right: 32%;
+              width: 217px;
+          }
+    
+          #tags__selected .tag__ustensils--wrapper .tag__ustensil {
+              bottom: 58px;
+              left: 510px;
+          }
+    
+          #tags__selected .tag__appliances--wrapper .tag__appliance {
+              left: 265px;
+              bottom: 58px;
+          }
+    
+    
+          #tags__selected .tag__ingredients--wrapper .tag__ingredient {
+              bottom: 58px;
+              left: 163px;
+          }
+}
 
-    #filters {
-        gap: 0px;
-        margin-left: 49px;
-        justify-content: inherit;
-    }
 
-    .search__input {
-        width: 728px;
-        display: flex;
-        justify-content: center;
 
-    }
-    .header{
-        width:117%;
-        margin-top:0px;
-    }
 
-    .search__input-group {
-        left: 40px;
-        left:0px;
-    }
 
-    .search__button {
-        right: 55px;
 
-    }
-
-    #form{
-        width:117%;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    h1.title {
-        font-size: 31px;
-        width: 853px;
-    }
-
-    .smallMealLogo {
-        right: 32%;
-        width: 217px;
-    }
+@media screen and (min-width:702px) and (max-width:819px) {
+ 
 
     .allMeals {
         font-size: 21px;
         right: -13px;
-        bottom: 609px;
+        bottom: 453px;
     }
 
+.filter__ustensils {
+    width: 159px;
+}
 
-    #tags__selected .tag__ustensils--wrapper .tag__ustensil {
-        bottom:58px;
-        left:510px;
-    }
+.filter__appliances {
+    width: 159px;
+}
 
-        #tags__selected .tag__appliances--wrapper .tag__appliance {
-            left:265px;
-            bottom:58px;
-        }
+.filter__ingredients {
+    width: 159px;
+}
 
+#filters {
+    gap: 0px;
+    margin-left: 49px;
+    justify-content: inherit;
+}
 
-                #tags__selected .tag__ingredients--wrapper .tag__ingredient {
-                    bottom:58px;
-                    left:163px;
-                }
-
-
+.search__input {
+    width: 728px;
+    display: flex;
+    justify-content: center;
 
 }
 
-@media screen and (min-height:700px) and (max-height:1057px) {
-.allMeals{
-    bottom:450px;
+.header {
+    width: 117%;
+    margin-top: 0px;
 }
+
+.search__input-group {
+    left: 40px;
+    left: 0px;
 }
 
+.search__button {
+    right: 55px;
 
-@media screen and (min-width:376px) and (max-width:699px) {
-  .header{
-    margin-top:0px;
-    width:100%;
-  }
+}
 
-  .smallMealLogo{
-    right:-5%;
-    width:225px;
-  }
-
-  h1.title{
-    font-size: 15px;
-    width:89%;
-    left:11px;
-  }
-
-  .search__input-group{
-    width:89%;
-  }
-  .search__input{
-    width:91%;
-  }
-
-  #form{
+#form {
+    width: 117%;
     margin-left: 0%;
     margin-right: 0%;
-  }
-  #filters {
+}
+
+h1.title {
+    font-size: 31px;
+    width: 853px;
+}
+
+.smallMealLogo {
+    right: 32%;
+    width: 217px;
+}
+
+#tags__selected .tag__ustensils--wrapper .tag__ustensil {
+    bottom: 58px;
+    left: 510px;
+}
+
+#tags__selected .tag__appliances--wrapper .tag__appliance {
+    left: 265px;
+    bottom: 58px;
+}
+
+
+#tags__selected .tag__ingredients--wrapper .tag__ingredient {
+    bottom: 58px;
+    left: 163px;
+}
+
+
+
+
+}
+
+
+
+@media screen and (min-width:401px) and (max-width:701px) {
+    #filters{
+        display: flex;
+        flex-wrap: inherit;
+align-items: center;
+flex-direction: column;
+margin-bottom: 40px;
+
+    }
+
+    .allMeals{
+        right:136px;
+        bottom:79px;
+        font-size: 27px;
+    }
+
+    
+        .header {
+            margin-top: 0px;
+            width: 100%;
+        }
+    
+        .smallMealLogo {
+            right: -5%;
+            width: 225px;
+        }
+    
+        h1.title {
+            font-size: 15px;
+            width: 89%;
+            left: 11px;
+        }
+    
+        .search__input-group {
+            width: 89%;
+        }
+    
+        .search__input {
+            width: 91%;
+        }
+    
+        #form {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    
+       
+    
+    
+        .search__button {
+            right: 35px;
+        }
+    
+        }
+   
+
+
+
+
+@media screen and (min-width:380px) and (max-width:400px) {
+    .allMeals {
+        bottom: 16px;
+        right:131px;
+        font-size: 26px;
+    }
+
+        .header {
+            margin-top: 0px;
+            width: 100%;
+        }
+    
+        .smallMealLogo {
+            right: -5%;
+            width: 225px;
+        }
+    
+        h1.title {
+            font-size: 15px;
+            width: 89%;
+            left: 11px;
+        }
+    
+        .search__input-group {
+            width: 89%;
+        }
+    
+        .search__input {
+            width: 91%;
+        }
+    
+        #form {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    
+        #filters {
             margin-bottom: 56px;
         }
-                
-  .allMeals {
-      right: 151px;
-     bottom: 21px;
-                      
-     }
-     .search__button{
-        right:35px;
-     }
+    
+    
+        .search__button {
+            right: 35px;
+        }
+
+}
+
+@media screen and (min-width:376px) and (max-width:379px) {
+.allMeals {
+        right: 151px;
+        bottom: 66px;
+
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -1086,8 +1314,8 @@ display: flex;
     }
 
     .allMeals {
-        right: 123px;
-        bottom: -88px;
+        right: 129px;
+        bottom: -154px;
         color: #1B1B1B;
     }
 
