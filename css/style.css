@@ -4,13 +4,21 @@
 }
 
 
-
+.renderFilters{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 body {
     font-family: "DM Sans", sans-serif;
     height: 100%;
     margin: 0px;
 }
+
+
 
 
 /*** MAIN ***/
@@ -129,6 +137,7 @@ h1.title {
     display: flex;
     left: 0;
     top: 0;
+    flex-direction: column;
     margin-bottom: 1rem;
 }
 
@@ -189,11 +198,8 @@ h1.title {
 #filters {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px;
-    ;
-    gap: 2rem;
-    bottom: 48px;
-    position: relative;
+    margin-right: 38%;
+   
 }
 
 
@@ -267,10 +273,7 @@ header h2 {
 
 .allMeals {
     font-family: 'Anton';
-    position: absolute;
-    z-index: 3;
-    bottom: 290px;
-    right: 334px;
+   
     font-size: 21px;
     font-weight: bolder;
 }
@@ -793,7 +796,7 @@ header h2 {
 
 #recipes__cards header .duration {
     position: relative;
-    bottom: 288px;
+    bottom: 308px;
     font-size: 16px;
     left: 122px;
     width: 65px;
@@ -1048,6 +1051,9 @@ strong {
 
 
 @media screen and (min-width:702px) and (max-width:819px) {
+    .allMeals {
+            position: inherit;
+        }
 
 
     .allMeals {
@@ -1073,6 +1079,10 @@ strong {
         margin-left: 49px;
         justify-content: inherit;
     }
+
+        .tag__ingredients--wrapper {
+            margin-top: -6px;
+        }
 
     .search__input {
         width: 728px;
@@ -1135,19 +1145,79 @@ strong {
 
 @media screen and (min-width:514px) and (max-width:701px) {
     .allMeals {
-        right: 211px;
-        bottom: -100px;
+            position: inherit;
+        }
+
+    .renderFilters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 434px;
+    }
+.allMeals {
+        font-family: 'Anton';
+        font-size: 21px;
+        font-weight: bolder;
+        position: inherit;
     }
 
+        #tags__selected {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+                .tag__ingredients--wrapper {
+                    left: 0;
+                    width: 170px;
+                    margin-left: inherit;
+                    margin-right: inherit;
+                }
+        
+                .tag__appliances--wrapper {
+                    left: 0;
+                    width: 170px;
+                    margin-left: inherit;
+                    margin-right: inherit;;
+                }
+        
+                .tag__ustensils--wrapper {
+                    left: 0;
+                    width: 170px;
+                    margin-left: inherit;
+                        margin-right: inherit;
+                        ;
+                }
+      #tags__selected .tag__ingredients--wrapper .tag__ingredient {
+                        background-color: var(--success);
+                                  
+                                    margin-top: 0px;
+                                    margin-left: 0px;
+                                    background: #FFD15B;
+                                    padding: 10px;
+                                    border-radius: 10px;
+                
+                                    display: flex;
+                                    align-items: center;
+                                }
+         #tags__selected .tag__ustensils--wrapper .tag__ustensil {
+                background-color: var(--success);
+
+               margin-top: inherit;
+              margin-left: inherit;
+              background: #FFD15B;
+              padding: 10px;
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+                          }
 
 
     #filters {
         display: flex;
-        flex-wrap: inherit;
-        align-items: center;
         flex-direction: column;
-        margin-bottom: 40px;
-
+        margin-left: inherit;
     }
 
 
@@ -1200,12 +1270,11 @@ strong {
 
     }
 
-    .allMeals {
-        right: 136px;
-        bottom: 79px;
-        font-size: 27px;
-    }
-
+   .renderFilters {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
 
     .header {
         margin-top: 0px;
@@ -1242,6 +1311,9 @@ strong {
     .search__button {
         right: 35px;
     }
+          .allMeals {
+              position: inherit;
+          }
 
 }
 
@@ -1250,12 +1322,12 @@ strong {
 
 
 @media screen and (min-width:380px) and (max-width:400px) {
-    .allMeals {
-        bottom: 16px;
-        right: 131px;
-        font-size: 26px;
-    }
 
+.renderFilters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .header {
         margin-top: 0px;
         width: 100%;
@@ -1295,22 +1367,23 @@ strong {
     .search__button {
         right: 35px;
     }
+          .allMeals {
+              position: inherit;
+          }
 
 }
 
-@media screen and (min-width:376px) and (max-width:379px) {
-    .allMeals {
-        right: 151px;
-        bottom: 66px;
 
-    }
-}
 
 @media screen and (max-width:375px) {
     #recipes_cards {
         width: 79%;
     }
-
+   .renderFilters {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
 
     .search__input-group {
         width: 60%;
@@ -1380,11 +1453,6 @@ strong {
         width: 161px;
     }
 
-    .allMeals {
-        right: 129px;
-        bottom: -154px;
-        color: #1B1B1B;
-    }
 
     #tags__selected .tag__ustensils--wrapper .tag__ustensil {
         left: 558px;
@@ -1400,11 +1468,23 @@ strong {
         left: 46px;
         bottom: 141px;
     }
+          .allMeals {
+              position: inherit;
+          }
 
 }
 
-@media screen and (max-width:360px) {
-    .allMeals {
-        bottom: -91px;
-    }
+
+@media screen and (max-width:375px) {
+    
+
+   .renderFilters {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .allMeals{
+    position: inherit;
+   }
 }
