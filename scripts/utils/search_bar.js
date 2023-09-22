@@ -38,7 +38,9 @@ function searchLive() {
       }
     }
     /* Remplir les filtres avec le tableau retourné */
+
     fillFilters(recipesToDisplay);
+    console.log("resultat", regex);
   }
 
   /* Si l'un de ses tableaux comportent un élément alors un tag est utilisé, applique donc la fonction filteredRecipesWithTags avec comme callback recipesToDisplay;
@@ -74,8 +76,7 @@ function searchLive() {
     displayData(recipesToDisplay);
   } else {
     displayData(recipesToDisplay);
-    noResultText.innerHTML =
-      "<p>Aucune recette ne correspond à votre critère...</p>";
+    noResultText.innerHTML = `<p>Aucune recette ne correspond à votre critère ${searchBarInput.value}</p>`;
   }
 
   // Si la barre de recherche est vide ou moins de 3 caractères.
