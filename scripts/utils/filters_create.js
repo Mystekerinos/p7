@@ -291,6 +291,10 @@ function filterUstensils() {
   inputUstensils.setAttribute("placeholder", "Sélectionner un ustensil...");
   inputUstensils.className = "filter__ustensils--input";
 
+  const iconUstensils = document.createElement("i");
+  iconUstensils.className = "fa-sharp fa-light fa-magnifying-glass";
+  iconUstensils.style.cursor = "pointer";
+  inputUstensils.appendChild(iconUstensils);
   const ustensilsListBox = document.createElement("ul");
   ustensilsListBox.className = "filter__ustensils--list";
   ustensilsListBox.style.display = "none";
@@ -304,15 +308,12 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--view");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "flex";
+      iconUstensils.style.display = "flex";
       titleUnfoldUstensils.style.display = "flex";
-      inputUstensils.style.top = "-3px";
-      inputUstensils.style.right = "-2px";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "-21px";
-      hiddenAngle.style.left = "124px";
-      title.style.bottom = "58px";
-      title.style.left = "-23px";
+      hiddenAngle.style.top = "37px";
+      hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
       template.style.borderRadius = "11px";
@@ -320,7 +321,7 @@ function filterUstensils() {
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
       template.style.right = "0px";
-      template.style.top = "1px";
+      template.style.top = "0px";
       template.style.height = "223px";
       ustensilsListBox.style.display = "flex";
       inputUstensils.focus();
@@ -341,7 +342,7 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--close");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "none";
-      titleUnfoldUstensils.style.display = "flex";
+      iconUstensils.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
