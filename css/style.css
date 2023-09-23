@@ -1095,20 +1095,25 @@ strong {
 
     .allMeals {
         font-size: 21px;
-        right: -13px;
-        bottom: 453px;
+        left:306px;
+        bottom: 42px;
+        position:relative;
     }
 
     .filter__ustensils {
-        width: 159px;
+        width: 185px;
+    }
+
+    h1.title2{
+        font-size: 31px;
     }
 
     .filter__appliances {
-        width: 159px;
+        width: 185px;
     }
 
     .filter__ingredients {
-        width: 159px;
+        width: 185px;
     }
 
     #filters {
@@ -1122,7 +1127,7 @@ strong {
     }
 
     .search__input {
-        width: 728px;
+        width: 860px;
         display: flex;
         justify-content: center;
 
@@ -1133,10 +1138,7 @@ strong {
         margin-top: 0px;
     }
 
-    .search__input-group {
-        left: 40px;
-        left: 0px;
-    }
+ 
 
     .search__button {
         right: 55px;
@@ -1160,19 +1162,22 @@ strong {
     }
 
     #tags__selected .tag__ustensils--wrapper .tag__ustensil {
-        bottom: 58px;
-        left: 510px;
+        top: -34px;
+        left: 3px;
+         width: 186px
     }
 
     #tags__selected .tag__appliances--wrapper .tag__appliance {
-        left: 265px;
-        bottom: 58px;
+        top: -33px;
+            right: 5px;
+            width: 188px
     }
 
 
     #tags__selected .tag__ingredients--wrapper .tag__ingredient {
-        bottom: 58px;
-        left: 163px;
+        top: -38px;
+        left: 50px;
+        width:186px
     }
 
 
@@ -1561,6 +1566,7 @@ strong {
         display: flex;
         justify-content: center;
         margin-left: 3px;
+        flex-direction: column;
     }
 
 
@@ -1611,17 +1617,17 @@ strong {
          }
 
     .filter__ingredients {
-        width: 161px;
+        width: 181px;
         margin-bottom:10px;
     }
 
     .filter__appliances {
-        width: 161px;
-        margin-bottom: 10px;
+        width: 181px;
+            margin-bottom: 10px;
     }
 
     .filter__ustensils {
-        width: 161px;
+    width: 181px;
         margin-bottom: 10px;
     }
 
@@ -1693,10 +1699,19 @@ strong {
         background: #FFD15B;
         padding: 10px;
         border-radius: 10px;
-        left: 15px;
+        left: 49px;
         display: flex;
         align-items: center;
     }
+
+
+        #tags__selected {
+            display: flex;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
 
     #tags__selected .tag__appliances--wrapper .tag__appliance {
         background-color: var(--success);
@@ -1709,7 +1724,7 @@ strong {
         border-radius: 10px;
         position: relative;
         top: 10px;
-        left: 15px;
+        left: 17px;
         display: flex;
         align-items: center;
     }
@@ -1725,7 +1740,7 @@ strong {
         border-radius: 10px;
         position: relative;
         top: 10px;
-        left:15px;
+        left:56px;
         display: flex;
         align-items: center;
     }
