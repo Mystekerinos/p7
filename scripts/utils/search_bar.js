@@ -7,7 +7,18 @@
 
 const searchBarInput = document.querySelector(".search__input");
 const noResultText = document.querySelector(".no-result-message");
+const deleteSearchBar = document.createElement("i");
+deleteSearchBar.className = "fa-solid fa-xmark";
+deleteSearchBar.style.cursor = "pointer";
+deleteSearchBar.style.width = "20px";
+deleteSearchBar.style.width = "20px";
+deleteSearchBar.style.zIndex = "3";
+deleteSearchBar.style.top = "64px";
+deleteSearchBar.style.right = "34px";
+deleteSearchBar.style.position = "absolute";
+deleteSearchBar.style.color = "#1B1B1B";
 
+searchBarInput.appendChild(deleteSearchBar);
 /** Fonction de recherche  **/
 function searchLive() {
   let tagsUsed = false;
