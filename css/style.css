@@ -886,6 +886,14 @@ strong {
 }
 
 @media screen and (min-width:1282px) and (max-width:1681px) {
+
+    h1.title{
+        right:-10px;
+    }
+
+          h1.title2 {
+              right: -6px;
+          }
     .allMeals {
             font-family: 'Anton';
             margin-right: 140px;
@@ -893,9 +901,32 @@ strong {
             position:relative;
             font-weight: bolder;
             margin-left: 293px;
-            left:576px;
+            left:521px;
             bottom:37px;
         }
+
+        #filters{
+            margin-left:52px;
+            left:454px;
+        }
+
+                #tags__selected .tag__ustensils--wrapper .tag__ustensil {
+                    top:-33px;
+                    right:-23px;
+                }
+          #tags__selected .tag__appliances--wrapper .tag__appliance {
+                                    top:-34px;
+                                    right:-5px;
+                                }
+                  #tags__selected .tag__ingredients--wrapper .tag__ingredient {
+                    top: -43px;
+                        left: 45px;
+                  }
+
+                  .search__input-group{
+                    left:-2px;
+                    top:83px;
+                  }
 }
 
 @media screen and (min-width:1057px) and (max-width:1281px) {
@@ -1197,6 +1228,20 @@ strong {
         margin-right: 434px;
     }
 
+    h1.title2 strong{
+        font-size:21px ;
+        position:relative;
+        right:-32px;
+    }
+
+         h1.title strong {
+            font-size: 21px;
+         }
+
+          h1.title2  {
+            width:inherit;
+          }
+
     .allMeals {
         font-family: 'Anton';
         font-size: 21px;
@@ -1286,7 +1331,8 @@ strong {
     }
 
     .search__input-group {
-        width: 89%;
+        width: 100%;
+        left:27px;
     }
 
     .search__input {
@@ -1302,7 +1348,7 @@ strong {
 
 
     .search__button {
-        right: 35px;
+        right: 50px;
     }
 }
 
