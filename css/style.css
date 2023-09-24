@@ -4,6 +4,8 @@
 }
 
 
+
+
 .renderFilters {
     display: flex;
     flex-direction: row;
@@ -118,7 +120,7 @@ h1.title2 {
     background-color: lightgrey;
     margin-left: 11%;
     margin-right: 11%;
-    height: 14449px;
+    height: 14749px;
 
 }
 
