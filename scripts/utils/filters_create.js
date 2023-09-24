@@ -38,6 +38,11 @@ function filterIngredients() {
   arrowUp.style.cursor = "pointer";
   arrowUp.style.display = "none";
 
+  const magnifyingGlasses = document.createElement("i");
+  magnifyingGlasses.className = "fa-solid fa-thin fa-magnifying-glass";
+  magnifyingGlasses.style.cursor = "pointer";
+  magnifyingGlasses.style.display = "none";
+
   const inputIngredients = document.createElement("input");
   inputIngredients.setAttribute("id", "ingredients-input");
   inputIngredients.style.display = "none";
@@ -48,6 +53,9 @@ function filterIngredients() {
   ingredientsListBox.className = "filter__ingredients--list";
   ingredientsListBox.style.display = "none";
 
+  const deleteSearchInput = document.createElement("i");
+  deleteSearchInput.className = "fa-solid fa-xmark";
+
   /** Ingredients Event **/
 
   /* Lors du clique sur ArrowDown */
@@ -55,12 +63,25 @@ function filterIngredients() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__ingredients--close");
       article.classList.add("filter__ingredients--view");
+      article.appendChild(magnifyingGlasses);
+      article.appendChild(deleteSearchInput);
+      inputIngredients.value = "";
       headerIngredients.style.display = "flex";
       inputIngredients.style.display = "flex";
       titleUnfold.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      // hiddenAngle.style.top = "37px";
+      magnifyingGlasses.style.display = "flex";
+      magnifyingGlasses.style.position = "absolute";
+      magnifyingGlasses.style.color = "#7A7A7A";
+      magnifyingGlasses.style.top = "65px";
+      magnifyingGlasses.style.right = "23px";
+      magnifyingGlasses.style.zIndex = "3";
+      deleteSearchInput.style.zIndex = "3";
+      deleteSearchInput.style.top = "64px";
+      deleteSearchInput.style.right = "34px";
+      deleteSearchInput.style.position = "absolute";
+
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -71,14 +92,23 @@ function filterIngredients() {
       // template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
-      // ingredientsBox.style.display = null;
-      ingredientsListBox.style.display = "flex";
-      console.log("arrow down");
-      inputIngredients.focus();
 
+      ingredientsListBox.style.display = "flex";
+
+      inputIngredients.focus();
+      inputIngredients.value = "";
       /* défini dans filters_input */
       // eslint-disable-next-line no-undef
       inputIngredient();
+
+      deleteSearchInput.style.cursor = "pointer";
+      deleteSearchInput.style.width = "20px";
+      deleteSearchInput.addEventListener("click", () => {
+        // défini dans search_bar.js
+        inputIngredients.value = "";
+        searchLive();
+        return false;
+      });
     }
     /* Défini dans tags.js */
     // eslint-disable-next-line no-undef
@@ -95,19 +125,16 @@ function filterIngredients() {
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      // template.style.width = "170px";
-      // title.style.bottom = "6px";
-      // title.style.right = "7px";
-      // hiddenAngle.style.top = "39px";
+
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      // template.style.backgroundColor = "FFFFFF";
+
       template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      // template.style.height = "47px";
+
       ingredientsListBox.style.display = "none";
       console.log("arrow iup");
       template.style.right = null;
@@ -171,6 +198,11 @@ function filterAppliances() {
   arrowUp.style.cursor = "pointer";
   arrowUp.style.display = "none";
 
+  const magnifyingGlasses = document.createElement("i");
+  magnifyingGlasses.className = "fa-solid fa-thin fa-magnifying-glass";
+  magnifyingGlasses.style.cursor = "pointer";
+  magnifyingGlasses.style.display = "none";
+
   const inputAppliances = document.createElement("input");
   inputAppliances.setAttribute("id", "appliances-input");
   inputAppliances.style.display = "none";
@@ -181,6 +213,9 @@ function filterAppliances() {
   appliancesListBox.className = "filter__appliances--list";
   appliancesListBox.style.display = "none";
 
+  const deleteSearchInput = document.createElement("i");
+  deleteSearchInput.className = "fa-solid fa-xmark";
+
   /** Appliances Event **/
 
   /* Lors du clique sur ArrowDown */
@@ -188,12 +223,14 @@ function filterAppliances() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__appliances--close");
       article.classList.add("filter__appliances--view");
+      article.appendChild(magnifyingGlasses);
+      article.appendChild(deleteSearchInput);
       headerAppliances.style.display = "flex";
       inputAppliances.style.display = "flex";
 
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      // hiddenAngle.style.top = "37px";
+
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -201,10 +238,19 @@ function filterAppliances() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      // template.style.right = "0px";
+      magnifyingGlasses.style.display = "flex";
+      magnifyingGlasses.style.position = "absolute";
+      magnifyingGlasses.style.color = "#7A7A7A";
+      magnifyingGlasses.style.top = "65px";
+      magnifyingGlasses.style.right = "23px";
+      magnifyingGlasses.style.zIndex = "3";
+      deleteSearchInput.style.zIndex = "3";
+      deleteSearchInput.style.top = "64px";
+      deleteSearchInput.style.right = "34px";
+      deleteSearchInput.style.position = "absolute";
       template.style.top = "0px";
       template.style.height = "223px";
-      // ingredientsBox.style.display = null;
+
       appliancesListBox.style.display = "flex";
       console.log("arrow down");
 
@@ -213,6 +259,14 @@ function filterAppliances() {
       /* Défini dans filters_input */
       // eslint-disable-next-line no-undef
       inputAppliance();
+      deleteSearchInput.style.cursor = "pointer";
+      deleteSearchInput.style.width = "20px";
+      deleteSearchInput.addEventListener("click", () => {
+        // défini dans search_bar.js
+        inputAppliances.value = "";
+        searchLive();
+        return false;
+      });
     }
     /* Défini dans tags.js */
     // eslint-disable-next-line no-undef
@@ -230,19 +284,16 @@ function filterAppliances() {
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      // template.style.width = "170px";
-      // title.style.bottom = "6px";
-      // title.style.right = "7px";
-      // hiddenAngle.style.top = "39px";
+
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      // template.style.backgroundColor = "FFFFFF";
+
       template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      // template.style.height = "47px";
+
       appliancesListBox.style.display = "none";
       template.style.right = null;
       template.style.top = null;
@@ -304,6 +355,11 @@ function filterUstensils() {
   arrowUp.style.cursor = "pointer";
   arrowUp.style.display = "none";
 
+  const magnifyingGlasses = document.createElement("i");
+  magnifyingGlasses.className = "fa-solid fa-thin fa-magnifying-glass";
+  magnifyingGlasses.style.cursor = "pointer";
+  magnifyingGlasses.style.display = "none";
+
   const inputUstensils = document.createElement("input");
   inputUstensils.setAttribute("id", "ustensils-input");
   inputUstensils.setAttribute("placeholder", "Sélectionner un ustensil...");
@@ -312,6 +368,8 @@ function filterUstensils() {
   const ustensilsListBox = document.createElement("ul");
   ustensilsListBox.className = "filter__ustensils--list";
   ustensilsListBox.style.display = "none";
+  const deleteSearchInput = document.createElement("i");
+  deleteSearchInput.className = "fa-solid fa-xmark";
 
   /** Ustensils Event **/
 
@@ -320,9 +378,20 @@ function filterUstensils() {
     if (e.target.className === "fa-solid fa-angle-down fa-lg") {
       article.classList.remove("filter__ustensils--close");
       article.classList.add("filter__ustensils--view");
+      article.appendChild(magnifyingGlasses);
+      article.appendChild(deleteSearchInput);
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "flex";
-
+      magnifyingGlasses.style.display = "flex";
+      magnifyingGlasses.style.position = "absolute";
+      magnifyingGlasses.style.color = "#7A7A7A";
+      magnifyingGlasses.style.top = "65px";
+      magnifyingGlasses.style.right = "23px";
+      magnifyingGlasses.style.zIndex = "3";
+      deleteSearchInput.style.zIndex = "3";
+      deleteSearchInput.style.top = "64px";
+      deleteSearchInput.style.right = "34px";
+      deleteSearchInput.style.position = "absolute";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
       // hiddenAngle.style.top = "37px";
@@ -345,6 +414,14 @@ function filterUstensils() {
       /* Défini dans Filters_input */
       // eslint-disable-next-line no-undef
       inputUstensil();
+      deleteSearchInput.style.cursor = "pointer";
+      deleteSearchInput.style.width = "20px";
+      deleteSearchInput.addEventListener("click", () => {
+        // défini dans search_bar.js
+        inputIngredients.value = "";
+        searchLive();
+        return false;
+      });
     }
     /* Défini dans tags.js */
     // eslint-disable-next-line no-undef
