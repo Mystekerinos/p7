@@ -22,39 +22,36 @@
 <body>
     <header class="header">
         <img class="smallMealLogo" src="/assets/Images/smallmealLogo.svg" alt="Logo petit plat" />
-        <h1 class="title"> CHERCHEZ PARMI PLUS DE 1500 RECETTES 
-        DU QUOTIDIEN, SIMPLES ET DÉLICIEUSES</h1>
+        <h1 class="title"><strong> CHERCHEZ PARMI PLUS DE 1500 RECETTES </strong></h1>
+        <h1 class="title2"><strong>DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES</strong></h1>
+        <div class="search__input-group">
+            <input type="text" class="search__input"
+                placeholder="Rechercher un ingrédient, un appareil, un ustensile, une recette..." />
+            <button class="search__button">
+                <img src="./assets/Images/magnifyingGlassButton.svg" alt="Search" />
+            </button>
+        </div>
     </header>
 
     <main class="main">
         <form id="form">
-            
-        <section class="search">
-            <div class="search__input-group">
-                <input type="text" class="search__input"
-                    placeholder="Rechercher un ingrédient, un appareil, un ustensile, une recette..." />
-                <button class="search__button">
-                    <img src="./assets/Images/magnifyingGlassButton.svg" alt="Search" />
-                </button>
-            </div>
-        </section>
-        <div class="renderFilters">
-        <section id="filters">
-            <div class="filter__ingredients"></div>
-            <div class="filter__appliances"></div>
-            <div class="filter__ustensils"></div>
-        </section>
-        <div class="allMeals"></div>
-        </div>
-        <section id="tags__selected">
-            <div class="tag__ingredients--wrapper"></div>
-            <div class="tag__appliances--wrapper"></div>
-            <div class="tag__ustensils--wrapper"></div>
-        </section>
-        <section id="recipes__cards">
-            <!-- CARDS COMPONENT JAVASCRIPTS recipes_cards.js -->
-        </section>
-        <span class="no-result-message"></span>
+
+            <section id="filters">
+                <div class="filter__ingredients"></div>
+                <div class="filter__appliances"></div>
+                <div class="filter__ustensils"></div>
+                <div class="allMeals"></div>
+            </section>
+
+            <section id="tags__selected">
+                <div class="tag__ingredients--wrapper"></div>
+                <div class="tag__appliances--wrapper"></div>
+                <div class="tag__ustensils--wrapper"></div>
+            </section>
+            <section id="recipes__cards">
+                <!-- CARDS COMPONENT JAVASCRIPTS recipes_cards.js -->
+            </section>
+            <span class="no-result-message"></span>
         </form>
     </main>
     <script src="./scripts/main/index.js"></script>
