@@ -241,17 +241,17 @@ h1.title2 {
 
 .filter__ustensils {
 
-
     border-radius: 11px;
-    background-color: #FFFFFF;
-    width: 195px;
-    height: 56px;
-    left: 23px;
-    display: flex;
-    margin-left: 2px;
-    margin-right: 23px;
-    position: relative;
-    align-items: center;
+        background-color: #FFFFFF;
+        width: 195px;
+        height: 56px;
+    
+        left: 23px;
+        display: flex;
+        margin-left: 2px;
+        margin-right: 23px;
+        position: relative;
+        align-items: center;
 }
 
 .filter__ingredients {
@@ -337,7 +337,7 @@ header h2 {
     outline: none;
 
     width: 100px;
-    height: 70px;
+    height: 56px;
 
     font-size: 1rem;
 
@@ -354,7 +354,7 @@ header h2 {
     display: flex;
 
     width: 170px;
-    height: 70px;
+    height: 56px;
     align-items: center;
 }
 
@@ -479,7 +479,7 @@ header h2 {
     color: #1B1B1B;
 
     width: 170px;
-    height: 70px;
+    height: 56px;
 
     border-radius: var(--br-5);
 
@@ -490,7 +490,7 @@ header h2 {
     display: flex;
 
     width: 170px;
-    height: 70px;
+    height: 56px;
     align-items: center;
 }
 
@@ -508,7 +508,7 @@ header h2 {
     background-color: var(--success);
 
     font-weight: bold;
-    height: 70px;
+    height: 56px;
     border-top-left-radius: var(--br-5);
     border-top-right-radius: var(--br-5);
 
@@ -518,7 +518,7 @@ header h2 {
 .filter__appliances--view header h2 {
     font-weight: normal;
     font-size: var(--fs-18);
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .filter__appliances--view header .fa-angle-up {
@@ -548,7 +548,7 @@ header h2 {
     color: #1B1B1B;
     position: absolute;
     left: 825px;
-    top: 34px;
+    top: 29px;
 
     z-index: 100;
     cursor: pointer;
@@ -599,13 +599,10 @@ header h2 {
 }
 
 
-
-
-
 /*filter ustensils */
 .filter__ustensils--template {
     margin-left: 0;
-    width: 194px;
+    width: 170px;
     float: left;
     overflow: hidden;
 }
@@ -615,23 +612,43 @@ header h2 {
 }
 
 .filter__ustensils--close {
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--success);
+    background-color: var(--primary);
     color: #1B1B1B;
 
     width: 170px;
-    height: 70px;
+
 
     border-radius: var(--br-5);
 
     font-weight: bold;
 }
 
+.filter__ustensils--close input {
+    position: absolute;
+    top: 0;
+    outline: none;
+
+    width: 100px;
+    height: 56px;
+
+    font-size: 1rem;
+
+    color: #1B1B1B;
+    background-color: var(--primary);
+
+    border: none;
+    border-top-left-radius: var(--br-5);
+    border-top-right-radius: var(--br-5);
+    margin-left: 1rem;
+}
+
 .filter__ustensils--header {
     display: flex;
 
     width: 170px;
-    height: 70px;
+    height: 56px;
     align-items: center;
 }
 
@@ -639,6 +656,7 @@ header h2 {
     font-size: 1rem;
     font-weight: normal;
     color: black;
+
 }
 
 .filter__ustensils--view {
@@ -735,7 +753,6 @@ header h2 {
 .filter__ustensils--list li:hover::after {
     width: 10%;
 }
-
 
 /* Recipes section - ARTICLES */
 

@@ -30,8 +30,8 @@ function filterIngredients() {
   hiddenAngle.className = "filter__ingredients--angleUp";
 
   const titleUnfold = document.createElement("h2");
-  titleUnfold.textContent = "Appareils";
-  titleUnfold.className = "filter__appliances--nameUnfold ";
+  titleUnfold.textContent = "Ingredients";
+  titleUnfold.className = "filter__ingredients--nameUnfold ";
 
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
@@ -60,7 +60,7 @@ function filterIngredients() {
       titleUnfold.style.display = "flex";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "37px";
+      // hiddenAngle.style.top = "37px";
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -68,10 +68,12 @@ function filterIngredients() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      template.style.right = "0px";
+      // template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
+      // ingredientsBox.style.display = null;
       ingredientsListBox.style.display = "flex";
+      console.log("arrow down");
       inputIngredients.focus();
 
       /* défini dans filters_input */
@@ -93,19 +95,26 @@ function filterIngredients() {
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      template.style.width = "170px";
-      title.style.bottom = "6px";
-      title.style.right = "7px";
-      hiddenAngle.style.top = "39px";
+      // template.style.width = "170px";
+      // title.style.bottom = "6px";
+      // title.style.right = "7px";
+      // hiddenAngle.style.top = "39px";
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      template.style.backgroundColor = "FFFFFF";
+      // template.style.backgroundColor = "FFFFFF";
+      template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      template.style.height = "47px";
+      // template.style.height = "47px";
       ingredientsListBox.style.display = "none";
+      console.log("arrow iup");
+      template.style.right = null;
+      template.style.top = null;
+      template.style.height = null;
+      template.style.width = "194px";
+      ingredientsBox.style.display = "flex";
     }
   });
 
@@ -117,6 +126,7 @@ function filterIngredients() {
   headerIngredients.appendChild(spanAngle);
   spanAngle.appendChild(arrowDown);
   article.appendChild(hiddenAngle);
+
   hiddenAngle.appendChild(arrowUp);
   article.appendChild(inputIngredients);
   article.appendChild(ingredientsListBox);
@@ -149,12 +159,12 @@ function filterAppliances() {
   arrowDown.className = "fa-solid fa-angle-down fa-lg";
   arrowDown.style.cursor = "pointer";
 
+  const hiddenAngle = document.createElement("span");
+  hiddenAngle.className = "filter__appliances--angleUp";
+
   const titleUnfoldAppliances = document.createElement("h2");
   titleUnfoldAppliances.textContent = "Appareils";
   titleUnfoldAppliances.className = "filter__appliances--nameUnfold ";
-
-  const hiddenAngle = document.createElement("span");
-  hiddenAngle.className = "filter__appliances--angleUp";
 
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
@@ -163,6 +173,7 @@ function filterAppliances() {
 
   const inputAppliances = document.createElement("input");
   inputAppliances.setAttribute("id", "appliances-input");
+  inputAppliances.style.display = "none";
   inputAppliances.setAttribute("placeholder", "Sélectionner un appareil...");
   inputAppliances.className = "filter__appliances--input";
 
@@ -179,12 +190,10 @@ function filterAppliances() {
       article.classList.add("filter__appliances--view");
       headerAppliances.style.display = "flex";
       inputAppliances.style.display = "flex";
+
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "29px";
-      title.style.display.position = "absolute";
-      title.style.display.left = "-13px";
-      title.style.display.top = "-5px";
+      // hiddenAngle.style.top = "37px";
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -192,10 +201,13 @@ function filterAppliances() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      template.style.right = "0px";
+      // template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
+      // ingredientsBox.style.display = null;
       appliancesListBox.style.display = "flex";
+      console.log("arrow down");
+
       inputAppliances.focus();
 
       /* Défini dans filters_input */
@@ -218,19 +230,25 @@ function filterAppliances() {
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      template.style.width = "170px";
-      title.style.bottom = "6px";
-      title.style.right = "7px";
-      hiddenAngle.style.top = "39px";
+      // template.style.width = "170px";
+      // title.style.bottom = "6px";
+      // title.style.right = "7px";
+      // hiddenAngle.style.top = "39px";
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      template.style.backgroundColor = "FFFFFF";
+      // template.style.backgroundColor = "FFFFFF";
+      template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      template.style.height = "47px";
+      // template.style.height = "47px";
       appliancesListBox.style.display = "none";
+      template.style.right = null;
+      template.style.top = null;
+      template.style.height = null;
+      template.style.width = "194px";
+      appliancesBox.style.display = "flex";
     }
   });
 
@@ -270,13 +288,13 @@ function filterUstensils() {
   const spanAngle = document.createElement("span");
   spanAngle.className = "filter__ustensils--angleDown";
 
-  const arrowDown = document.createElement("i");
-  arrowDown.className = "fa-solid fa-angle-down fa-lg";
-  arrowDown.style.cursor = "pointer";
-
   const titleUnfoldUstensils = document.createElement("h2");
   titleUnfoldUstensils.textContent = "Ustensils";
   titleUnfoldUstensils.className = "filter__ustensils--nameUnfold ";
+
+  const arrowDown = document.createElement("i");
+  arrowDown.className = "fa-solid fa-angle-down fa-lg";
+  arrowDown.style.cursor = "pointer";
 
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__ustensils--angleUp";
@@ -291,10 +309,6 @@ function filterUstensils() {
   inputUstensils.setAttribute("placeholder", "Sélectionner un ustensil...");
   inputUstensils.className = "filter__ustensils--input";
 
-  const iconUstensils = document.createElement("i");
-  iconUstensils.className = "fa-sharp fa-light fa-magnifying-glass";
-  iconUstensils.style.cursor = "pointer";
-  inputUstensils.appendChild(iconUstensils);
   const ustensilsListBox = document.createElement("ul");
   ustensilsListBox.className = "filter__ustensils--list";
   ustensilsListBox.style.display = "none";
@@ -308,11 +322,10 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--view");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "flex";
-      iconUstensils.style.display = "flex";
-      titleUnfoldUstensils.style.display = "flex";
+
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "37px";
+      // hiddenAngle.style.top = "37px";
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -320,11 +333,14 @@ function filterUstensils() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      template.style.right = "0px";
+      // template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
+      // ingredientsBox.style.display = null;
       ustensilsListBox.style.display = "flex";
+      console.log("arrow down");
       inputUstensils.focus();
+      ustensilsListBox.style.display = null;
 
       /* Défini dans Filters_input */
       // eslint-disable-next-line no-undef
@@ -342,23 +358,31 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--close");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "none";
-      iconUstensils.style.display = "flex";
+      titleUnfoldUstensils.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      template.style.width = "170px";
-      title.style.bottom = "6px";
-      title.style.right = "7px";
-      hiddenAngle.style.top = "39px";
+      // template.style.width = "170px";
+      // title.style.bottom = "6px";
+      // title.style.right = "7px";
+      // hiddenAngle.style.top = "39px";
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      template.style.backgroundColor = "FFFFFF";
+      // template.style.backgroundColor = "FFFFFF";
+      template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      template.style.height = "47px";
+      // template.style.height = "47px";
       ustensilsListBox.style.display = "none";
+      template.style.right = null;
+      template.style.top = null;
+      template.style.height = null;
+      template.style.width = "194px";
+      title.style.bottom = null;
+      title.style.left = null;
+      ustensilsListBox.style.display = "flex";
     }
   });
 
