@@ -1037,6 +1037,7 @@ strong {
     .allMeals {
         bottom: 607px;
         right: 23px;
+        margin-left: 56px;
     }
 
 
@@ -1056,6 +1057,7 @@ strong {
         gap: 0px;
         margin-left: 49px;
         justify-content: inherit;
+        width: inherit;
     }
 
     .search__input {
@@ -1063,6 +1065,11 @@ strong {
         display: flex;
         justify-content: center;
 
+    }
+
+    h1.title2{
+        font-size: 31px;
+        right:5px;
     }
 
     .header {
@@ -1076,7 +1083,7 @@ strong {
     }
 
     .search__button {
-        right: 55px;
+        right: 111px;
 
     }
 
@@ -1089,6 +1096,7 @@ strong {
     h1.title {
         font-size: 31px;
         width: 853px;
+        right:7px;
     }
 
     .smallMealLogo {
@@ -1119,9 +1127,10 @@ strong {
 
 
 @media screen and (min-width:702px) and (max-width:819px) {
-    .allMeals {
-        position: inherit;
-    }
+  .search__input-group{
+    width:755px;
+    left:2px;
+  }
 
 
     .allMeals {
@@ -1149,7 +1158,7 @@ strong {
 
     #filters {
         gap: 0px;
-        margin-left: 49px;
+        margin-left: 0px;;
         justify-content: inherit;
     }
 
@@ -1158,7 +1167,7 @@ strong {
     }
 
     .search__input {
-        width: 860px;
+        width: 100%;
         display: flex;
         justify-content: center;
 
@@ -1172,7 +1181,7 @@ strong {
  
 
     .search__button {
-        right: 55px;
+        right: 4px;
 
     }
 
@@ -1194,20 +1203,20 @@ strong {
 
     #tags__selected .tag__ustensils--wrapper .tag__ustensil {
         top: -34px;
-        left: 3px;
+        left: -47px;
          width: 186px
     }
 
     #tags__selected .tag__appliances--wrapper .tag__appliance {
         top: -33px;
-            right: 5px;
+            right: 54px;
             width: 188px
     }
 
 
     #tags__selected .tag__ingredients--wrapper .tag__ingredient {
         top: -38px;
-        left: 50px;
+        left: -3px;
         width:186px
     }
 
@@ -1247,7 +1256,21 @@ strong {
         font-size: 21px;
         font-weight: bolder;
         position: inherit;
+        margin-right: 0px;
+        margin-left: 0px;;
     }
+
+    .filter__appliances{
+        margin-bottom: 10px;
+    }
+         .filter__ustensils {
+             margin-bottom: 10px;
+             
+         }
+                  .filter__ingredients {
+                      margin-bottom: 10px;
+                      
+                  }
 
     #tags__selected {
         display: flex;
@@ -1257,10 +1280,11 @@ strong {
     }
 
     .tag__ingredients--wrapper {
-        left: 0;
+        left: -27px;
         width: 170px;
         margin-left: inherit;
         margin-right: inherit;
+        position: relative;
     }
 
     .tag__appliances--wrapper {
@@ -1294,15 +1318,28 @@ strong {
 
     #tags__selected .tag__ustensils--wrapper .tag__ustensil {
         background-color: var(--success);
-
+        position: relative;
         margin-top: inherit;
         margin-left: inherit;
         background: #FFD15B;
         padding: 10px;
         border-radius: 10px;
         display: flex;
+        left: -10px;
         align-items: center;
     }
+         #tags__selected .tag__appliances--wrapper .tag__appliance {
+             background-color: var(--success);
+             left:-10px;
+             position: relative;
+             margin-top: inherit;
+             margin-left: inherit;
+             background: #FFD15B;
+             padding: 10px;
+             border-radius: 10px;
+             display: flex;
+             align-items: center;
+         }
 
 
     #filters {
@@ -1326,12 +1363,12 @@ strong {
 
     h1.title {
         font-size: 15px;
-        width: 89%;
+        width: inherit;
         left: 11px;
     }
 
     .search__input-group {
-        width: 100%;
+        width: 98%;
         left:27px;
     }
 
@@ -1359,8 +1396,20 @@ strong {
         align-items: center;
         flex-direction: column;
         margin-bottom: 40px;
+        margin-left:0px;
 
     }
+
+    h1.title2{
+      font-size:15px;
+      position:relative;
+      right:-5px;
+      width:inherit;
+    }
+
+       
+
+       
 
     .renderFilters {
         display: flex;
@@ -1386,10 +1435,11 @@ strong {
 
     .search__input-group {
         width: 89%;
+        left:8px;
     }
 
     .search__input {
-        width: 91%;
+        width: 100%;
     }
 
     #form {
@@ -1397,15 +1447,28 @@ strong {
         margin-right: 0%;
     }
 
-
+   .filter__ingredients{
+    margin-bottom: 10px;
+   }
+        .filter__appliances {
+            margin-bottom: 10px;
+        }
+                 .filter__ustensils {
+                     margin-bottom: 10px;
+                 }
 
 
     .search__button {
-        right: 35px;
+        right: 4px;
     }
 
     .allMeals {
-        position: inherit;
+        position:relative;
+        right:-7px;
+        margin-top: 29px;
+        margin-left:0px;
+        margin-right: 0px;
+
     }
 
         #tags__selected {
@@ -1423,6 +1486,9 @@ strong {
 
 
 @media screen and (min-width:380px) and (max-width:400px) {
+    #tags__selected{
+        margin-left: 15px;
+    }
 
 .filter__appliances {
         border-radius: 11px;
@@ -1468,9 +1534,9 @@ strong {
     }
 
   h1.title2 {
-      font-size: 13px;
+      font-size: 15px;
       width: 89%;
-      left: 220px;
+      left: 14px;
   }
 
 
@@ -1516,6 +1582,7 @@ strong {
         justify-content: center;
         margin-right:44px;
         margin-left: 0px;
+        flex-direction: column;
     }
         #tags__selected .tag__ingredients--wrapper .tag__ingredient {
             background-color: var(--success);
@@ -1613,6 +1680,7 @@ strong {
         justify-content: center;
         margin-left: 3px;
         flex-direction: column;
+        width: inherit;
     }
 
 
@@ -1622,7 +1690,7 @@ strong {
     }
 
     .header {
-        width: 98%;
+        width: 100%;
         margin-top: 0px;
     }
 
@@ -1631,7 +1699,7 @@ strong {
     }
 
     #form {
-        width: 99%;
+        width: 100%;
         margin-left: 0%;
         margin-right: 0%;
     }
@@ -1729,10 +1797,10 @@ strong {
         position: inherit;
     }
 
-}
 
 
-@media screen and (max-width:375px) {
+
+
 
 
 #tags__selected .tag__ingredients--wrapper .tag__ingredient {
