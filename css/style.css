@@ -504,7 +504,7 @@ header h2 {
     flex-direction: column;
     align-items: center;
 
-    color: #FFF;
+    color:black;
     background-color: var(--success);
 
     font-weight: bold;
@@ -528,9 +528,9 @@ header h2 {
 .filter__appliances--view input {
 
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     right: 14px;
-    top: 53px;
+    top: 62px;
     box-sizing: border-box;
     background-image: url('searchicon.png');
     background-position: 14px 12px;
@@ -666,13 +666,27 @@ header h2 {
     overflow: hidden;
     top: -162px;
     color: black;
-    z-index: 100;
+    z-index: 4;
 
     display: flex;
     margin-bottom: 10px;
     align-items: center;
     padding-left: 1px;
     font-size: 16px;
+}
+
+
+.iconMagnifyingGlasses{
+        overflow: hidden;
+            top: -162px;
+            color: black;
+            z-index: 100;
+        
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+            padding-left: 1px;
+            font-size: 16px;
 }
 
 .filter__ustensils--view header h2 {
@@ -708,7 +722,7 @@ header h2 {
     left: 151px;
     top: 29px;
 
-    z-index: 100;
+    z-index: 4;
     cursor: pointer;
 }
 

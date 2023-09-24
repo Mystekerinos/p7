@@ -5,6 +5,7 @@ function getSearchIngredients() {
   const filterRender = document.querySelectorAll(
     ".filter__ingredients--list li"
   );
+
   const cards = document.querySelectorAll(".filter__ingredients--items");
   const searchQuery = document.getElementById("ingredients-input").value;
 
@@ -25,6 +26,7 @@ function inputIngredient() {
   searchInputIngredient.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
+
     clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
     typingTimer = setTimeout(getSearchIngredients, typeInterval);
@@ -87,6 +89,7 @@ function inputUstensil() {
   searchInputUstensil.addEventListener("keyup", () => {
     // clearTimeout is defined on search_bar.js
     // eslint-disable-next-line no-undef
+
     clearTimeout(typingTimer);
     // eslint-disable-next-line no-undef
     typingTimer = setTimeout(getSearchUstensils, typeInterval);

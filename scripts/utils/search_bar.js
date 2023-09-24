@@ -40,7 +40,6 @@ function searchLive() {
     /* Remplir les filtres avec le tableau retourné */
 
     fillFilters(recipesToDisplay);
-    console.log("resultat", regex);
   }
 
   /* Si l'un de ses tableaux comportent un élément alors un tag est utilisé, applique donc la fonction filteredRecipesWithTags avec comme callback recipesToDisplay;
