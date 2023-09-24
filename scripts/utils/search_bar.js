@@ -19,21 +19,26 @@ function searchLive() {
     mainInput = searchBarInput.value;
 
     const regex = new RegExp(`${mainInput.trim().toLowerCase()}`);
-    recipesToDisplay = recipes.filter((recipe) => {
+    for (let i = 0; i < recipes.length; i += 1) {
       let recipeIsMatching = false;
-      if (regex.test(recipe.name)) {
+      if (regex.test(recipes[i].name)) {
         recipeIsMatching = true;
-      } else if (regex.test(recipe.description)) {
+      } else if (regex.test(recipes[i].description)) {
         recipeIsMatching = true;
-      }
-      recipe.ingredients.forEach(({ ingredient }) => {
-        if (regex.test(ingredient)) {
-          recipeIsMatching = true;
+      } else {
+        for (let j = 0; j < recipes[i].ingredients.length; j += 1) {
+          if (regex.test(recipes[i].ingredients[j].ingredient)) {
+            recipeIsMatching = true;
+            break;
+          }
         }
-      });
-      return recipeIsMatching;
-    });
+      }
+      if (recipeIsMatching === true) {
+        recipesToDisplay.push(recipes[i]);
+      }
+    }
     /* Remplir les filtres avec le tableau retourné */
+
     fillFilters(recipesToDisplay);
   }
 
@@ -63,17 +68,14 @@ function searchLive() {
       recipesToDisplay = filteredRecipesWithTags(recipes);
     }
   }
-
   renderRecipes(recipesToDisplay.length);
-
   /** Message erreur dans le cas d'une mauvaise recherche **/
   if (recipesToDisplay.length > 0) {
     noResultText.innerHTML = "";
     displayData(recipesToDisplay);
   } else {
     displayData(recipesToDisplay);
-    noResultText.innerHTML =
-      "<p>Aucune recette ne correspond à votre critère...</p>";
+    noResultText.innerHTML = `<p>Aucune recette ne correspond à votre critère ${searchBarInput.value}</p>`;
   }
 
   // Si la barre de recherche est vide ou moins de 3 caractères.
