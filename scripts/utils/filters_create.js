@@ -30,8 +30,8 @@ function filterIngredients() {
   hiddenAngle.className = "filter__ingredients--angleUp";
 
   const titleUnfold = document.createElement("h2");
-  titleUnfold.textContent = "Ingredients";
-  titleUnfold.className = "filter__ingredients--nameUnfold ";
+  titleUnfold.textContent = "Appareils";
+  titleUnfold.className = "filter__appliances--nameUnfold ";
 
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
@@ -71,7 +71,6 @@ function filterIngredients() {
       template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
-
       ingredientsListBox.style.display = "flex";
       inputIngredients.focus();
 
@@ -118,7 +117,6 @@ function filterIngredients() {
   headerIngredients.appendChild(spanAngle);
   spanAngle.appendChild(arrowDown);
   article.appendChild(hiddenAngle);
-
   hiddenAngle.appendChild(arrowUp);
   article.appendChild(inputIngredients);
   article.appendChild(ingredientsListBox);
@@ -151,12 +149,12 @@ function filterAppliances() {
   arrowDown.className = "fa-solid fa-angle-down fa-lg";
   arrowDown.style.cursor = "pointer";
 
-  const hiddenAngle = document.createElement("span");
-  hiddenAngle.className = "filter__appliances--angleUp";
-
   const titleUnfoldAppliances = document.createElement("h2");
   titleUnfoldAppliances.textContent = "Appareils";
   titleUnfoldAppliances.className = "filter__appliances--nameUnfold ";
+
+  const hiddenAngle = document.createElement("span");
+  hiddenAngle.className = "filter__appliances--angleUp";
 
   const arrowUp = document.createElement("i");
   arrowUp.className = "fa-solid fa-angle-up fa-lg";
@@ -165,7 +163,6 @@ function filterAppliances() {
 
   const inputAppliances = document.createElement("input");
   inputAppliances.setAttribute("id", "appliances-input");
-  inputAppliances.style.display = "none";
   inputAppliances.setAttribute("placeholder", "Sélectionner un appareil...");
   inputAppliances.className = "filter__appliances--input";
 
@@ -273,13 +270,13 @@ function filterUstensils() {
   const spanAngle = document.createElement("span");
   spanAngle.className = "filter__ustensils--angleDown";
 
-  const titleUnfoldUstensils = document.createElement("h2");
-  titleUnfoldUstensils.textContent = "Ustensils";
-  titleUnfoldUstensils.className = "filter__ustensils--nameUnfold ";
-
   const arrowDown = document.createElement("i");
   arrowDown.className = "fa-solid fa-angle-down fa-lg";
   arrowDown.style.cursor = "pointer";
+
+  const titleUnfoldUstensils = document.createElement("h2");
+  titleUnfoldUstensils.textContent = "Ustensils";
+  titleUnfoldUstensils.className = "filter__ustensils--nameUnfold ";
 
   const hiddenAngle = document.createElement("span");
   hiddenAngle.className = "filter__ustensils--angleUp";
@@ -294,6 +291,10 @@ function filterUstensils() {
   inputUstensils.setAttribute("placeholder", "Sélectionner un ustensil...");
   inputUstensils.className = "filter__ustensils--input";
 
+  const iconUstensils = document.createElement("i");
+  iconUstensils.className = "fa-sharp fa-light fa-magnifying-glass";
+  iconUstensils.style.cursor = "pointer";
+  inputUstensils.appendChild(iconUstensils);
   const ustensilsListBox = document.createElement("ul");
   ustensilsListBox.className = "filter__ustensils--list";
   ustensilsListBox.style.display = "none";
@@ -307,15 +308,12 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--view");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "flex";
+      iconUstensils.style.display = "flex";
       titleUnfoldUstensils.style.display = "flex";
-      inputUstensils.style.top = "-3px";
-      inputUstensils.style.right = "-2px";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      hiddenAngle.style.top = "-21px";
-      hiddenAngle.style.left = "124px";
-      title.style.bottom = "58px";
-      title.style.left = "-23px";
+      hiddenAngle.style.top = "37px";
+      hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
       template.style.borderRadius = "11px";
@@ -323,7 +321,7 @@ function filterUstensils() {
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
       template.style.right = "0px";
-      template.style.top = "1px";
+      template.style.top = "0px";
       template.style.height = "223px";
       ustensilsListBox.style.display = "flex";
       inputUstensils.focus();
@@ -344,7 +342,7 @@ function filterUstensils() {
       article.classList.add("filter__ustensils--close");
       headerUstensils.style.display = "flex";
       inputUstensils.style.display = "none";
-      titleUnfoldUstensils.style.display = "flex";
+      iconUstensils.style.display = "flex";
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
