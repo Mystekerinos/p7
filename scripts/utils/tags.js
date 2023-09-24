@@ -53,7 +53,7 @@ function addTagFilterIngredients() {
         deleteTagIcon.classname = "deleteIcon";
 
         const deleteIconImg = document.createElement("i");
-        deleteIconImg.className = "fa-regular fa-circle-xmark";
+        deleteIconImg.className = "fa-solid fa-xmark";
         deleteIconImg.style.cursor = "pointer";
         deleteIconImg.style.width = "20px";
 
@@ -92,7 +92,7 @@ function addTagFilterAppliances() {
         deleteTagIcon.className = "deleteIcon";
 
         const deleteIconImg = document.createElement("i");
-        deleteIconImg.className = "fa-regular fa-circle-xmark";
+        deleteIconImg.className = "fa-solid fa-xmark";
         deleteIconImg.style.cursor = "pointer";
         deleteIconImg.style.width = "20px";
         deleteTagIcon.addEventListener("click", () => {
@@ -132,7 +132,7 @@ function addTagFilterUstensils() {
         deleteTagIcon.className = "deleteIcon";
 
         const deleteIconImg = document.createElement("i");
-        deleteIconImg.className = "fa-regular fa-circle-xmark";
+        deleteIconImg.className = "fa-solid fa-xmark";
         deleteIconImg.style.cursor = "pointer";
         deleteIconImg.style.width = "20px";
         deleteTagIcon.addEventListener("click", () => {
