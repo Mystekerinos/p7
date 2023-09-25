@@ -31,24 +31,20 @@ function searchLive() {
     mainInput = searchBarInput.value;
 
     const regex = new RegExp(`${mainInput.trim().toLowerCase()}`);
-    for (let i = 0; i < recipes.length; i += 1) {
+    recipesToDisplay = recipes.filter((recipe) => {
       let recipeIsMatching = false;
       if (regex.test(recipes[i].name)) {
         recipeIsMatching = true;
-      } else if (regex.test(recipes[i].description)) {
+      } else if (regex.test(recipe.description)) {
         recipeIsMatching = true;
-      } else {
-        for (let j = 0; j < recipes[i].ingredients.length; j += 1) {
-          if (regex.test(recipes[i].ingredients[j].ingredient)) {
-            recipeIsMatching = true;
-            break;
-          }
+      }
+      recipe.ingredients.forEach(({ ingredient }) => {
+        if (regex.test(ingredient)) {
+          recipeIsMatching = true;
         }
-      }
-      if (recipeIsMatching === true) {
-        recipesToDisplay.push(recipes[i]);
-      }
-    }
+      });
+      return recipeIsMatching;
+    });
     /* Remplir les filtres avec le tableau retourné */
 
     fillFilters(recipesToDisplay);
