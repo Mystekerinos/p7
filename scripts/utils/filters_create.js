@@ -394,7 +394,6 @@ function filterUstensils() {
       deleteSearchInput.style.position = "absolute";
       arrowDown.style.display = "none";
       arrowUp.style.display = "flex";
-      // hiddenAngle.style.top = "37px";
       hiddenAngle.style.left = "143px";
       hiddenAngle.style.position = "absolute";
       template.style.width = "194px";
@@ -402,10 +401,8 @@ function filterUstensils() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      // template.style.right = "0px";
       template.style.top = "0px";
       template.style.height = "223px";
-      // ingredientsBox.style.display = null;
       ustensilsListBox.style.display = "flex";
       console.log("arrow down");
       inputUstensils.focus();
@@ -439,19 +436,13 @@ function filterUstensils() {
       arrowDown.style.display = "flex";
       arrowUp.style.display = "none";
       title.style.marginTop = "0px";
-      // template.style.width = "170px";
-      // title.style.bottom = "6px";
-      // title.style.right = "7px";
-      // hiddenAngle.style.top = "39px";
       hiddenAngle.style.left = "15px";
       hiddenAngle.style.position = "absolute";
       template.style.position = "none";
       template.style.zIndex = "none";
-      // template.style.backgroundColor = "FFFFFF";
       template.style.backgroundColor = "rgba(0,0,0,0)";
       template.style.right = "none";
       template.style.borderRadius = "11px";
-      // template.style.height = "47px";
       ustensilsListBox.style.display = "none";
       template.style.right = null;
       template.style.top = null;
