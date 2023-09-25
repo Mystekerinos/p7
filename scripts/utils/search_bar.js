@@ -28,18 +28,18 @@ function searchLive() {
 
   // Retourne un tableau 'recipeToDisplay' qui suit les règles de ma regex.
   if (searchBarInput.value.length > 2) {
-    mainInput = searchBarInput.value;
+    mainInput = searchBarInput.value.toLowerCase().trim();
 
-    const regex = new RegExp(`${mainInput.trim().toLowerCase()}`);
+    const regex = new RegExp(`${mainInput}`);
     recipesToDisplay = recipes.filter((recipe) => {
       let recipeIsMatching = false;
-      if (regex.test(recipes[i].name)) {
+      if (recipe.name.toLowerCase().includes(mainInput)) {
         recipeIsMatching = true;
       } else if (regex.test(recipe.description)) {
         recipeIsMatching = true;
       }
       recipe.ingredients.forEach(({ ingredient }) => {
-        if (regex.test(ingredient)) {
+        if (regex.test(ingredient.toLowerCase())) {
           recipeIsMatching = true;
         }
       });
