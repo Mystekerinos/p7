@@ -28,12 +28,11 @@ function searchLive() {
 
   // Retourne un tableau 'recipeToDisplay' qui suit les règles de ma regex.
   if (searchBarInput.value.length > 2) {
-    mainInput = searchBarInput.value;
-
-    const regex = new RegExp(`${mainInput.trim().toLowerCase()}`);
+    mainInput = searchBarInput.value.toLowerCase().trim();
+    const regex = new RegExp(`${mainInput}`);
     for (let i = 0; i < recipes.length; i += 1) {
       let recipeIsMatching = false;
-      if (regex.test(recipes[i].name)) {
+      if (recipes[i].name.toLowerCase().includes(mainInput)) {
         recipeIsMatching = true;
       } else if (regex.test(recipes[i].description)) {
         recipeIsMatching = true;
@@ -50,7 +49,7 @@ function searchLive() {
       }
     }
     /* Remplir les filtres avec le tableau retourné */
-
+    console.log("Recipes matching the search:", recipesToDisplay); // Ajoutez ce message de débogage
     fillFilters(recipesToDisplay);
   }
 
@@ -91,10 +90,7 @@ function searchLive() {
   }
 
   // Si la barre de recherche est vide ou moins de 3 caractères.
-  if (
-    (searchBarInput.value === "" || searchBarInput.value.length < 3) &&
-    tagsUsed === false
-  ) {
+  if (searchBarInput.value === "") {
     fillFilters(recipes);
     displayData(recipes);
   }
