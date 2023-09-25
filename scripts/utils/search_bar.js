@@ -4,7 +4,7 @@
 /** DisplayData is defined in index.js **/
 
 /* eslint-disable no-undef */
-
+const searchBarInputGroup = document.querySelector(".search__input-group");
 const searchBarInput = document.querySelector(".search__input");
 const noResultText = document.querySelector(".no-result-message");
 const deleteSearchBar = document.createElement("i");
@@ -13,12 +13,13 @@ deleteSearchBar.style.cursor = "pointer";
 deleteSearchBar.style.width = "20px";
 deleteSearchBar.style.width = "20px";
 deleteSearchBar.style.zIndex = "3";
-deleteSearchBar.style.top = "64px";
-deleteSearchBar.style.right = "34px";
+deleteSearchBar.style.top = "51px";
+deleteSearchBar.style.right = "66px";
 deleteSearchBar.style.position = "absolute";
 deleteSearchBar.style.color = "#1B1B1B";
+deleteSearchBar.style.display = "none";
 
-searchBarInput.appendChild(deleteSearchBar);
+searchBarInputGroup.appendChild(deleteSearchBar);
 /** Fonction de recherche  **/
 function searchLive() {
   let tagsUsed = false;
@@ -96,7 +97,6 @@ function searchLive() {
   ) {
     fillFilters(recipes);
     displayData(recipes);
-    noResultText.innerHTML = "";
   }
 }
 
@@ -107,6 +107,25 @@ const typeInterval = 100;
 searchBarInput.addEventListener("keyup", () => {
   clearTimeout(typingTimer);
   typingTimer = setTimeout(searchLive(), typeInterval);
+});
+
+// deleteSearchBar.addEventListener("click", () => {
+//   // défini dans search_bar.js
+//   console.log(searchBarInput.value);
+//   searchBarInput.value = "";
+//   searchLive();
+//   return false;
+// });
+
+searchBarInput.addEventListener("focus", () => {
+  deleteSearchBar.style.display = "block"; // Affichez deleteSearchBar
+});
+
+deleteSearchBar.addEventListener("click", () => {
+  searchBarInput.value = ""; // Effacez le champ de saisie
+  deleteSearchBar.style.display = "none"; // Masquez deleteSearchBar
+  searchLive(); // Déclencher une recherche (si nécessaire)
+  return false; // Empêcher le comportement par défaut (si nécessaire)
 });
 
 function renderRecipes(nbRecipes) {
