@@ -90,7 +90,10 @@ function searchLive() {
   }
 
   // Si la barre de recherche est vide ou moins de 3 caractères.
-  if (searchBarInput.value === "") {
+  if (
+    (searchBarInput.value === "" || searchBarInput.value.length < 3) &&
+    tagsUsed === false
+  ) {
     fillFilters(recipes);
     displayData(recipes);
   }
