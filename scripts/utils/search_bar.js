@@ -37,12 +37,13 @@ function searchLive() {
         recipeIsMatching = true;
       } else if (regex.test(recipe.description)) {
         recipeIsMatching = true;
+      } else {
+        recipe.ingredients.forEach(({ ingredient }) => {
+          if (regex.test(ingredient.toLowerCase())) {
+            recipeIsMatching = true;
+          }
+        });
       }
-      recipe.ingredients.forEach(({ ingredient }) => {
-        if (regex.test(ingredient.toLowerCase())) {
-          recipeIsMatching = true;
-        }
-      });
       return recipeIsMatching;
     });
     /* Remplir les filtres avec le tableau retourné */
