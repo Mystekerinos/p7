@@ -49,7 +49,6 @@ function searchLive() {
       }
     }
     /* Remplir les filtres avec le tableau retourné */
-    console.log("Recipes matching the search:", recipesToDisplay); // Ajoutez ce message de débogage
     fillFilters(recipesToDisplay);
   }
 
@@ -107,14 +106,6 @@ searchBarInput.addEventListener("keyup", () => {
   clearTimeout(typingTimer);
   typingTimer = setTimeout(searchLive(), typeInterval);
 });
-
-// deleteSearchBar.addEventListener("click", () => {
-//   // défini dans search_bar.js
-//   console.log(searchBarInput.value);
-//   searchBarInput.value = "";
-//   searchLive();
-//   return false;
-// });
 
 searchBarInput.addEventListener("focus", () => {
   deleteSearchBar.style.display = "block"; // Affichez deleteSearchBar
