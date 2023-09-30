@@ -106,14 +106,6 @@ searchBarInput.addEventListener("keyup", () => {
   typingTimer = setTimeout(searchLive(), typeInterval);
 });
 
-// deleteSearchBar.addEventListener("click", () => {
-//   // défini dans search_bar.js
-//   console.log(searchBarInput.value);
-//   searchBarInput.value = "";
-//   searchLive();
-//   return false;
-// });
-
 searchBarInput.addEventListener("focus", () => {
   deleteSearchBar.style.display = "block"; // Affichez deleteSearchBar
 });
