@@ -1,7 +1,3 @@
-/*** Fonction pour remplir les filtres par catégorie ***/
-
-/** fillfilters() is initiated on index.js **/
-// eslint-disable-next-line no-unused-vars
 function fillFilters(recipes) {
   const ingredientsBloc = document.querySelector(".filter__ingredients--list");
   const appliancesBloc = document.querySelector(".filter__appliances--list");
@@ -65,23 +61,22 @@ function fillFilters(recipes) {
       }
     }
   }
-  /* Variable défini dans tags.js */
-  // eslint-disable-next-line no-undef
+
   tagIngredientAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterIngredients();
-  // eslint-disable-next-line no-undef
+
   tagApplianceAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterAppliances();
-  // eslint-disable-next-line no-undef
+
   tagUstensilAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterUstensils();
 }
 
 /*** Fonction pour ouvrir qu'un seul filtre à la fois. ***/
-// eslint-disable-next-line no-unused-vars
+
 function isArrowClicked() {
   /** Variables **/
 

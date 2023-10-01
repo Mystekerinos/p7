@@ -1,9 +1,3 @@
-/** recipesToDisplay is defined in tags.js **/
-/** filteredRecipesWithTags is defined in tags.js **/
-/** fillFilters is defined in filters_fill.js **/
-/** DisplayData is defined in index.js **/
-
-/* eslint-disable no-undef */
 const searchBarInputGroup = document.querySelector(".search__input-group");
 const searchBarInput = document.querySelector(".search__input");
 const noResultText = document.querySelector(".no-result-message");
@@ -52,8 +46,6 @@ function searchLive() {
     fillFilters(recipesToDisplay);
   }
 
-  /* Si l'un de ses tableaux comportent un élément alors un tag est utilisé, applique donc la fonction filteredRecipesWithTags avec comme callback recipesToDisplay;
-  Les tableaux sont définis dans tags.js dans la fonction filteredRecipesWithTags. */
   if (
     Array.from(
       document.querySelectorAll(
@@ -108,14 +100,14 @@ searchBarInput.addEventListener("keyup", () => {
 });
 
 searchBarInput.addEventListener("focus", () => {
-  deleteSearchBar.style.display = "block"; // Affichez deleteSearchBar
+  deleteSearchBar.style.display = "block";
 });
 
 deleteSearchBar.addEventListener("click", () => {
-  searchBarInput.value = ""; // Effacez le champ de saisie
-  deleteSearchBar.style.display = "none"; // Masquez deleteSearchBar
-  searchLive(); // Déclencher une recherche (si nécessaire)
-  return false; // Empêcher le comportement par défaut (si nécessaire)
+  searchBarInput.value = "";
+  deleteSearchBar.style.display = "none";
+  searchLive();
+  return false;
 });
 
 function renderRecipes(nbRecipes) {

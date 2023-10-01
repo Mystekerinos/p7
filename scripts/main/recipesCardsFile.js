@@ -1,6 +1,3 @@
-/** Fonction pour afficher le contenu de 'ingrédients' pour nos cards. **/
-/* getIngredients is used on our factory 'getRecipeCard' */
-
 function getIngredients(ingredients) {
   const column = document.createElement("div");
   column.classList.add("ingredients__detailled--bloc");
@@ -25,9 +22,6 @@ function getIngredients(ingredients) {
   return column;
 }
 
-/** Factory qui permet de générer nos cards de Recipes. **/
-/* getRecipeCard is used in index.js */
-// eslint-disable-next-line no-unused-vars
 function getRecipeCard(data) {
   const {
     id,
@@ -86,7 +80,6 @@ function getRecipeCard(data) {
   cardInfo.setAttribute("appliance", appliance);
   cardInfo.setAttribute("ustensils", ustensils);
 
-  /* getIngredients est définit en début de page */
   const recipeIngredients = getIngredients(ingredients);
 
   const recipeDescription = document.createElement("p");
