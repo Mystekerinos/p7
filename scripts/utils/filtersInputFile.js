@@ -19,16 +19,9 @@ function getSearchIngredients() {
   return filterRender;
 }
 
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
 function inputIngredient() {
   const searchInputIngredient = document.getElementById("ingredients-input");
   searchInputIngredient.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
-
-    // clearTimeout(typingTimer);
-    // eslint-disable-next-line no-undef
     getSearchIngredients();
   });
 }
@@ -50,15 +43,9 @@ function getSearchAppliances() {
   return filterRender;
 }
 
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
 function inputAppliance() {
   const searchInputAppliance = document.getElementById("appareilsInputId");
   searchInputAppliance.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
-
-    // eslint-disable-next-line no-undef
     getSearchAppliances();
   });
 }
@@ -82,15 +69,11 @@ function getSearchUstensils() {
   return filterRender;
 }
 
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
 function inputUstensil() {
   const searchInputUstensil = document.getElementById("ustensilesInputId");
   searchInputUstensil.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
     clearTimeout(typingTimer);
-    // eslint-disable-next-line no-undef
+
     getSearchUstensils();
   });
 }
@@ -136,13 +119,9 @@ function getSearchAppliances() {
   return filterRender;
 }
 
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
 function inputAppliance() {
   const searchInputAppliance = document.getElementById("appliances-input");
   searchInputAppliance.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
     getSearchAppliances();
   });
 }
@@ -164,14 +143,9 @@ function getSearchUstensils() {
   return filterRender;
 }
 
-/* Used on filters_recipes.js */
-// eslint-disable-next-line no-unused-vars
 function inputUstensil() {
   const searchInputUstensil = document.getElementById("ustensils-input");
   searchInputUstensil.addEventListener("keyup", () => {
-    // clearTimeout is defined on search_bar.js
-    // eslint-disable-next-line no-undef
-
     getSearchUstensils();
   });
 }

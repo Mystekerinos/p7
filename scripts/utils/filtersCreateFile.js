@@ -2,8 +2,6 @@
 
 /*** function filterAppliances créer et fait apparaitre le filtre Ingrédient. ***/
 
-/** filterIngredients is initiated on index.js **/
-// eslint-disable-next-line no-unused-vars
 function filterIngredients() {
   const ingredientsBox = document.getElementsByClassName("filter__ingredients");
   const template = document.createElement("div");
@@ -89,7 +87,7 @@ function filterIngredients() {
       template.style.position = "absolute";
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
-      // template.style.right = "0px";
+
       template.style.top = "0px";
       template.style.height = "223px";
 
@@ -97,21 +95,18 @@ function filterIngredients() {
 
       inputIngredients.focus();
       inputIngredients.value = "";
-      /* défini dans filters_input */
-      // eslint-disable-next-line no-undef
+
       inputIngredient();
 
       deleteSearchInput.style.cursor = "pointer";
       deleteSearchInput.style.width = "20px";
       deleteSearchInput.addEventListener("click", () => {
-        // défini dans search_bar.js
         inputIngredients.value = "";
         searchLive();
         return false;
       });
     }
-    /* Défini dans tags.js */
-    // eslint-disable-next-line no-undef
+
     addTagFilterIngredients();
   });
 
@@ -161,9 +156,6 @@ function filterIngredients() {
   return article;
 }
 
-/*** function filterAppliances créer et fait apparaitre le filtre appareil. ***/
-/** filterAppliances() is initiated on index.js **/
-// eslint-disable-next-line no-unused-vars
 function filterAppliances() {
   const appliancesBox = document.getElementsByClassName("filter__appliances");
   const template = document.createElement("div");
@@ -256,20 +248,16 @@ function filterAppliances() {
 
       inputAppliances.focus();
 
-      /* Défini dans filters_input */
-      // eslint-disable-next-line no-undef
       inputAppliance();
       deleteSearchInput.style.cursor = "pointer";
       deleteSearchInput.style.width = "20px";
       deleteSearchInput.addEventListener("click", () => {
-        // défini dans search_bar.js
         inputAppliances.value = "";
         searchLive();
         return false;
       });
     }
-    /* Défini dans tags.js */
-    // eslint-disable-next-line no-undef
+
     addTagFilterAppliances();
   });
 
@@ -319,8 +307,7 @@ function filterAppliances() {
 }
 
 /*** function filterUstensils créer et fait apparaitre le filtre ustensil. ***/
-/** filterUstensils() is initiated on index.js **/
-// eslint-disable-next-line no-unused-vars
+
 function filterUstensils() {
   const ustensilsBox = document.getElementsByClassName("filter__ustensils");
   const template = document.createElement("div");
@@ -408,20 +395,16 @@ function filterUstensils() {
       inputUstensils.focus();
       ustensilsListBox.style.display = null;
 
-      /* Défini dans Filters_input */
-      // eslint-disable-next-line no-undef
       inputUstensil();
       deleteSearchInput.style.cursor = "pointer";
       deleteSearchInput.style.width = "20px";
       deleteSearchInput.addEventListener("click", () => {
-        // défini dans search_bar.js
         inputIngredients.value = "";
         searchLive();
         return false;
       });
     }
-    /* Défini dans tags.js */
-    // eslint-disable-next-line no-undef
+
     addTagFilterUstensils();
   });
 

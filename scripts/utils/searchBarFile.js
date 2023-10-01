@@ -107,14 +107,14 @@ searchBarInput.addEventListener("keyup", () => {
 });
 
 searchBarInput.addEventListener("focus", () => {
-  deleteSearchBar.style.display = "block"; // Affichez deleteSearchBar
+  deleteSearchBar.style.display = "block";
 });
 
 deleteSearchBar.addEventListener("click", () => {
-  searchBarInput.value = ""; // Effacez le champ de saisie
-  deleteSearchBar.style.display = "none"; // Masquez deleteSearchBar
-  searchLive(); // Déclencher une recherche (si nécessaire)
-  return false; // Empêcher le comportement par défaut (si nécessaire)
+  searchBarInput.value = "";
+  deleteSearchBar.style.display = "none";
+  searchLive();
+  return false;
 });
 
 function renderRecipes(nbRecipes) {

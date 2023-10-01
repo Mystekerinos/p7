@@ -121,14 +121,14 @@ export function mealFactory(data) {
   function getIngredients() {
     allIngredients.push(...ingredients);
     console.log("xxxx", allIngredients);
-    return allIngredients; // Assurez-vous que "ingredients" est une propriété contenant les données d'ingrédients
+    return allIngredients;
   }
 
   allIngredients.push(...ingredients);
   function getIngredients() {
     allIngredients.push(...ingredients);
     console.log("xxxx", allIngredients);
-    return allIngredients; // Assurez-vous que "ingredients" est une propriété contenant les données d'ingrédients
+    return allIngredients;
   }
 
   function searchButtonIngredient() {

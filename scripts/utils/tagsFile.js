@@ -95,7 +95,7 @@ function addTagFilterAppliances() {
         deleteIconImg.style.width = "20px";
         deleteTagIcon.addEventListener("click", () => {
           tagApplianceContainer.remove();
-          // défini dans search_bar.js
+
           searchLive();
           return false;
         });
@@ -103,7 +103,7 @@ function addTagFilterAppliances() {
         tagApplianceContainer.appendChild(tagAppliance);
         tagApplianceContainer.appendChild(deleteTagIcon);
         deleteTagIcon.appendChild(deleteIconImg);
-        // défini dans search_bar.js
+
         searchLive();
       });
     });

@@ -1,7 +1,5 @@
 /*** Fonction pour remplir les filtres par catégorie ***/
 
-/** fillfilters() is initiated on index.js **/
-// eslint-disable-next-line no-unused-vars
 function fillFilters(recipes) {
   const ingredientsBloc = document.querySelector(".filter__ingredients--list");
   const appliancesBloc = document.querySelector(".filter__appliances--list");
@@ -11,14 +9,13 @@ function fillFilters(recipes) {
   const appliancesList = [];
   const ustensilsList = [];
 
-  // On vide les listes à chaque fois que l'on appel la fonction.
   ingredientsBloc.innerHTML = "";
   appliancesBloc.innerHTML = "";
   ustensilsBloc.innerHTML = "";
 
   recipes.forEach((recipe) => {
     /** Ingredients **/
-    // if tags already used, don't push it.
+
     const itags = [...document.querySelectorAll(".tag__ingredient")].map(
       (itag) => itag.innerText
     );
@@ -36,7 +33,7 @@ function fillFilters(recipes) {
     });
 
     /** appliances **/
-    // if tags already used, don't push it.
+
     const atags = [...document.querySelectorAll(".tag__appliance")].map(
       (atag) => atag.innerText
     );
@@ -52,7 +49,7 @@ function fillFilters(recipes) {
     }
 
     /** ustensils **/
-    // if tags already used, don't push it.
+
     const utags = [...document.querySelectorAll(".tag__ustensil")].map(
       (utag) => utag.innerText
     );
@@ -69,23 +66,22 @@ function fillFilters(recipes) {
       }
     });
   });
-  /* Variable défini dans tags.js */
-  // eslint-disable-next-line no-undef
+
   tagIngredientAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterIngredients();
-  // eslint-disable-next-line no-undef
+
   tagApplianceAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterAppliances();
-  // eslint-disable-next-line no-undef
+
   tagUstensilAlreadyAdded = false;
-  // eslint-disable-next-line no-undef
+
   addTagFilterUstensils();
 }
 
 /*** Fonction pour ouvrir qu'un seul filtre à la fois. ***/
-// eslint-disable-next-line no-unused-vars
+
 function isArrowClicked() {
   /** Variables **/
 
