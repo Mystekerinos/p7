@@ -1,8 +1,3 @@
-/** searchLive is defined in search_bar.js **/
-/* eslint-disable no-undef */
-/* eslint-disable no-loop-func */
-/* eslint-disable no-restricted-syntax */
-
 /*** Variables ***/
 
 /** On sélectionne les items dans chaque filtre **/

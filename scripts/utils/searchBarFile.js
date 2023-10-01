@@ -1,8 +1,3 @@
-/** recipesToDisplay is defined in tags.js **/
-/** filteredRecipesWithTags is defined in tags.js **/
-/** fillFilters is defined in filters_fill.js **/
-/** DisplayData is defined in index.js **/
-
 /* eslint-disable no-undef */
 const searchBarInputGroup = document.querySelector(".search__input-group");
 const searchBarInput = document.querySelector(".search__input");
