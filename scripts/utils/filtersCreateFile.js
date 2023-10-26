@@ -89,7 +89,7 @@ function filterIngredients() {
       template.style.backgroundColor = "#FFFFFF";
 
       template.style.top = "0px";
-      template.style.height = "223px";
+      template.style.height = "304px";
 
       ingredientsListBox.style.display = "flex";
 
@@ -241,7 +241,7 @@ function filterAppliances() {
       deleteSearchInput.style.right = "34px";
       deleteSearchInput.style.position = "absolute";
       template.style.top = "0px";
-      template.style.height = "223px";
+      template.style.height = "304px";
 
       appliancesListBox.style.display = "flex";
       console.log("arrow down");
@@ -389,7 +389,7 @@ function filterUstensils() {
       template.style.zIndex = "3";
       template.style.backgroundColor = "#FFFFFF";
       template.style.top = "0px";
-      template.style.height = "223px";
+      template.style.height = "304px";
       ustensilsListBox.style.display = "flex";
       console.log("arrow down");
       inputUstensils.focus();
