@@ -24,14 +24,14 @@ function searchLive() {
   if (searchBarInput.value.length > 2) {
     mainInput = searchBarInput.value.toLowerCase().trim();
     const regex = new RegExp(`${mainInput}`);
-    for (let i = 0; i < recipes.length; i += 1) {
+    for (let i = 0; i < recipes.length; i++) {
       let recipeIsMatching = false;
       if (recipes[i].name.toLowerCase().includes(mainInput)) {
         recipeIsMatching = true;
       } else if (regex.test(recipes[i].description)) {
         recipeIsMatching = true;
       } else {
-        for (let j = 0; j < recipes[i].ingredients.length; j += 1) {
+        for (let j = 0; j < recipes[i].ingredients.length; j++) {
           if (regex.test(recipes[i].ingredients[j].ingredient)) {
             recipeIsMatching = true;
             break;

@@ -14,7 +14,7 @@ function fillFilters(recipes) {
 
   for (const recipe of recipes) {
     /** Ingredients (boucle native : destructuré) **/
-    const itags = [...document.querySelectorAll(".tag__ingredient")].map(
+    const itags = Array.from(document.querySelectorAll(".tag__ingredient")).map(
       (itag) => itag.innerText
     );
     for (const { ingredient } of recipe.ingredients) {
@@ -30,7 +30,7 @@ function fillFilters(recipes) {
       }
     }
     /** appliances **/
-    const atags = [...document.querySelectorAll(".tag__appliance")].map(
+    const atags = Array.from(document.querySelectorAll(".tag__appliance")).map(
       (atag) => atag.innerText
     );
     if (
@@ -44,7 +44,7 @@ function fillFilters(recipes) {
       appliancesBloc.appendChild(filterItem);
     }
     /** ustensils (boucle native) **/
-    const utags = [...document.querySelectorAll(".tag__ustensil")].map(
+    const utags = Array.from(document.querySelectorAll(".tag__ustensil")).map(
       (utag) => utag.innerText
     );
     for (let i = 0; i < recipe.ustensils.length; i++) {
