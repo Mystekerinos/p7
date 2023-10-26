@@ -16,7 +16,7 @@ function fillFilters(recipes) {
   recipes.forEach((recipe) => {
     /** Ingredients **/
 
-    const itags = [...document.querySelectorAll(".tag__ingredient")].map(
+    const itags = Array.from(document.querySelectorAll(".tag__ingredient")).map(
       (itag) => itag.innerText
     );
     recipe.ingredients.forEach(({ ingredient }) => {
@@ -34,7 +34,7 @@ function fillFilters(recipes) {
 
     /** appliances **/
 
-    const atags = [...document.querySelectorAll(".tag__appliance")].map(
+    const atags = Array.from(document.querySelectorAll(".tag__appliance")).map(
       (atag) => atag.innerText
     );
     if (
@@ -50,7 +50,7 @@ function fillFilters(recipes) {
 
     /** ustensils **/
 
-    const utags = [...document.querySelectorAll(".tag__ustensil")].map(
+    const utags = Array.from(document.querySelectorAll(".tag__ustensil")).map(
       (utag) => utag.innerText
     );
     recipe.ustensils.forEach((ustensil) => {
