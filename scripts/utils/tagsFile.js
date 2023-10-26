@@ -205,29 +205,23 @@ function filteredRecipesWithTags(recipesToFilter) {
       ustensilsInTheRecipe.push(ustensil);
     }
 
-    if (taggedIngredients.length > 0) {
-      for (const taggedIngredient of taggedIngredients) {
-        if (ingredientsInTheRecipe.includes(taggedIngredient)) {
-          ingredientsMatching += 1;
-        }
+    taggedIngredients.forEach((taggedIngredient) => {
+      if (ingredientsInTheRecipe.includes(taggedIngredient)) {
+        ingredientsMatching += 1;
       }
-    }
+    });
 
-    if (taggedAppliances.length > 0) {
-      for (const taggedAppliance of taggedAppliances) {
-        if (appliancesInTheRecipe.includes(taggedAppliance)) {
-          appliancesMatching += 1;
-        }
+    taggedAppliances.forEach((taggedAppliance) => {
+      if (appliancesInTheRecipe.includes(taggedAppliance)) {
+        appliancesMatching += 1;
       }
-    }
+    });
 
-    if (taggedUstensils.length > 0) {
-      for (const taggedUstensil of taggedUstensils) {
-        if (ustensilsInTheRecipe.includes(taggedUstensil)) {
-          ustensilsMatching += 1;
-        }
+    taggedUstensils.forEach((taggedUstensil) => {
+      if (ustensilsInTheRecipe.includes(taggedUstensil)) {
+        ustensilsMatching += 1;
       }
-    }
+    });
 
     if (ingredientsMatching === taggedIngredients.length) {
       ingredientIsMatching = true;
