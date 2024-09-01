@@ -8,6 +8,8 @@ Formation Développeur d'application - Javascript React
 
 **Technologies** 
 
+. HTML
+
 . Javascript
 
 . CSS
